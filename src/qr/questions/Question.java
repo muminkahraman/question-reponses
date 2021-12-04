@@ -10,7 +10,7 @@ public abstract class Question {
     protected Difficulty difficulty;
     protected Theme theme;
 
-    public Question(String enonce, int numero, Difficulty difficulty, String theme){
+    public Question(String enonce, int numero, Difficulty difficulty, Theme theme){
         this.enonce = enonce;
         this.numero = numero;
         this.indicator = 0;
@@ -18,15 +18,17 @@ public abstract class Question {
 
         //On rajoute directement cette question dans la liste des questions
         // de son thème
-        for(Theme t : Themes.getThemeList()){
+        this.theme = theme;
+        /*for(Theme t : Themes.getThemeList()){
             if(t.getDesignation()==theme){
                 this.theme = t;
                 t.getListThemeQuestions().add(this);
-            }
+            }*/
+
         //On rajoute cette question dans la grande liste de Questions
             Questions.addQuestion(this);
         }
-    }
+
     @Override
     public String toString(){
         return "Une Question";
