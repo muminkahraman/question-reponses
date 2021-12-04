@@ -15,8 +15,18 @@ public class QCM extends Question{
         this.bonneReponse = bonneReponse;
     }
 
+
     @Override
     public String toString(){
-        return "Question No "+numero+" Type QCM :\n--------- \n enonce + A. "+reponse1+"\n B. "+reponse2+"\n C."+bonneReponse+"\n";
+        return "Question No "+numero+" Type QCM :\n"+" Difficulté"+difficulty + "\nTheme :"+theme+"\n--------- \n enonce "+enonce+"\nA. "+reponse1+"\n B. "+reponse2+"\n C."+bonneReponse+"\n";
+    }
+
+    @Override
+    public Question saisieQuestion() {
+        return null;
+    }
+    public static Question saisieQuestion(String enonce, int numero, Difficulty difficulty, Theme theme,
+                                   String reponse1, String reponse2, String bonneReponse) {
+        return new QCM(enonce, numero, difficulty, theme, reponse1,reponse2, bonneReponse);
     }
 }

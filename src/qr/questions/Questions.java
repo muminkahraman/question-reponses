@@ -5,28 +5,33 @@ import java.util.List;
 
 public class Questions {
     private static int NUMERO_DE_QUESTION = 1;
-    private List<Question> listOfAllQuestions;
+    private static List<Question> listOfAllQuestions;
 
     public Questions(){
         listOfAllQuestions = new ArrayList<Question>();
     }
 
-    public void addQuestion(Question question){
+    public static void addQuestion(Question question){
         listOfAllQuestions.add(question);
-        //On  attribue comme numeéro de question séquentielle la valeur
+        //On  attribue comme numéro de question séquentielle la valeur
         //actuelle de NUMERO_DE_QUESTION
 
         question.setNumero(NUMERO_DE_QUESTION);
         NUMERO_DE_QUESTION+=1;
     }
 
-    public void deleteQuestionByRank(int rank){
+    public static List<Question> getListOfAllQuestions() {
+        return listOfAllQuestions;
+    }
+
+    public static void deleteQuestionByRank(int rank){
         listOfAllQuestions.remove(rank);
     }
 
-    public void selectQuestion(){
+    public static void selectQuestion(){
     }
 
-    public void getAllThemesWithQuestions(){
+    public static void getAllThemesWithQuestions(){
+
     }
 }

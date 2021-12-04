@@ -1,25 +1,38 @@
 package qr.questions;
 
 import qr.themes.Theme;
+import qr.themes.Themes;
 
 public abstract class Question {
     protected String enonce;
     protected int numero;
-    protected int indicator;
+    protected int indicator; // 1 si sélectionnée , 0 sinon
     protected Difficulty difficulty;
     protected Theme theme;
 
-    public Question(String enonce, int numero, Difficulty difficulty, Theme theme){
+    public Question(String enonce, int numero, Difficulty difficulty, String theme){
         this.enonce = enonce;
         this.numero = numero;
         this.indicator = 0;
         this.difficulty = difficulty;
-        this.theme = theme;
+
+        //On rajoute directement cette question dans la liste des questions
+        // de son thème
+        for(Theme t : Themes.getThemeList()){
+            if(t.getDesignation()==theme){
+                this.theme = t;
+                t.getListThemeQuestions().add(this);
+            }
+        //On rajoute cette question dans la grande liste de Questions
+            Questions.addQuestion(this);
+        }
     }
     @Override
     public String toString(){
         return "Une Question";
     }
+
+    public abstract Question saisieQuestion();
 
     public int getNumero() {
         return numero;

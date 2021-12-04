@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed405468-1020-49ee-9879-bf26f3891a57" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/interfaces/Phase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/qr/players/Joueur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/qr/players/PlayerState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/qr/themes/Themes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2021_11_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2021_11_40__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelisation/.UML.vpp.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelisation/UML.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/Modelisation/UML.vpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/Qrgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/Qrgame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/players/Joueurs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/players/Joueurs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/questions/QCM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/QCM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/questions/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/questions/Questions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/Questions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/questions/RC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/RC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/questions/VF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/VF.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/qr/themes/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/themes/Theme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/themes/Themes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/themes/Themes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +70,10 @@
       <updated>1637231901764</updated>
       <workItem from="1637231905050" duration="1195000" />
       <workItem from="1637234982146" duration="792000" />
-      <workItem from="1637785540995" duration="3876000" />
+      <workItem from="1637785540995" duration="7255000" />
+      <workItem from="1637828456892" duration="751000" />
+      <workItem from="1638436275669" duration="1533000" />
+      <workItem from="1638547766486" duration="12233000" />
     </task>
     <servers />
   </component>
