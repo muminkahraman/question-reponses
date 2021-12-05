@@ -6,6 +6,7 @@ import exceptions.ExitException;
 import interfaces.Phase;
 import qr.players.Joueurs;
 import qr.questions.Questions;
+import qr.themes.Theme;
 import qr.themes.Themes;
 
 public class Qrgame implements Phase {
@@ -16,9 +17,6 @@ public class Qrgame implements Phase {
 
    public static void main(String[] args){
 
-
-
-
        System.out.println("*****************************************************\n \t\t\t\tJEU QUESTION / REPONSE \n*****************************************************");
 
        int choice = -1;
@@ -28,7 +26,11 @@ public class Qrgame implements Phase {
               System.out.println("*****************************************************\n \t\t\t\tPHASE 1 \n*****************************************************");
 
               joueurs.setRandomPlayers();
-                System.out.println(joueurs);
+              System.out.println(joueurs);
+
+              Theme themeChoisi = themeChoice();
+              System.out.println(themeChoisi);
+
 
           }
       }
@@ -62,6 +64,32 @@ public class Qrgame implements Phase {
         }
         if (nbChoice == 0) throw new ExitException();
         return Integer.parseInt(choice);
+    }
+
+    private static Theme themeChoice() {
+        System.out.println("Choisir un thème\n----------------------\n");
+        themes.afficherLesThemes();
+        Scanner sc = new Scanner(System.in);
+        String choice = sc.nextLine();
+        int nbChoice;
+        Theme chosenTheme = null;
+
+
+        while (!choice.matches("\\d+") || (nbChoice = Integer.parseInt(choice)) < 0 || nbChoice > themes.getThemeList().size()) {
+            System.out.println("Choix invalide !\n\nEssayez encore :");
+            choice = sc.nextLine();
+        }
+
+        chosenTheme =  themes.getThemeList().get(Integer.parseInt(choice)-1);
+        if(chosenTheme.getChosenIndicator()==1){
+            System.err.println("Ce thème a déjà été choisi ! Choisissez un autre :");
+            themeChoice();
+        }
+
+        chosenTheme.setChosenIndicator(1);
+
+        return chosenTheme;
+
     }
 
 
