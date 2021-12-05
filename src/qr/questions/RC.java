@@ -11,10 +11,13 @@ public class RC extends Question{
         this.bonneReponse = bonneReponse;
     }
 
+    public String getBonneReponse() {
+        return bonneReponse;
+    }
 
     @Override
     public String toString(){
-        return "Question No "+numero+" Type Réponse Courte :\n"+" Difficulté"+difficulty + "\nTheme :"+theme+"\n--------- \n enonce "+enonce;
+        return "Question No: "+numero+" Type: Réponse Courte :\n"+"Difficulté: "+difficulty + "\nTheme :"+theme.getDesignation()+"\nenonce: "+enonce+"\n--------- \n\n";
     }
 
     @Override

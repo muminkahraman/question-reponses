@@ -21,6 +21,10 @@ public class Joueur {
         return "Joueur numero: "+ numeroJoueur+ "\n"+"Nom: "+nomJoueur+"\n"+"Score: "+score+" Etat: "+etatJoueur;
     }
 
+    public String getNomJoueur() {
+        return nomJoueur;
+    }
+
     public PlayerState getEtatJoueur() {
         return etatJoueur;
     }
@@ -31,5 +35,9 @@ public class Joueur {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    public int getScore() {
+        return score;
     }
 }

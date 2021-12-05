@@ -65,6 +65,15 @@ public class Joueurs {
 
         this.randomPlayers = randomPlayers;
 
+        //l'état des joueurs sélectionné change
+        for(Joueur player : this.randomPlayers){
+            player.setEtatJoueur(PlayerState.SELECTED);
+        }
+
+    }
+
+    public Joueur[] getRandomPlayers() {
+        return randomPlayers;
     }
 
     @Override

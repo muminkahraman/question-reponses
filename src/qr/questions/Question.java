@@ -1,8 +1,7 @@
 package qr.questions;
 
-import qr.Qrgame;
+import qr.phases.Qrgame;
 import qr.themes.Theme;
-import qr.themes.Themes;
 
 public abstract class Question {
     protected String enonce;

@@ -18,7 +18,7 @@ public class QCM extends Question{
 
     @Override
     public String toString(){
-        return "Question No "+numero+" Type QCM :\n"+" Difficulté"+difficulty + "\nTheme :"+theme+"\n--------- \n enonce "+enonce+"\nA. "+reponse1+"\n B. "+reponse2+"\n C."+bonneReponse+"\n";
+        return "Question No: "+numero+" Type: QCM\n"+"Difficulté: "+difficulty + "\nTheme: "+theme.getDesignation()+"\nenonce: "+enonce+"\n A. "+reponse1+"\n B. "+reponse2+"\n C."+bonneReponse+"\n--------- \n\n";
     }
 
     @Override

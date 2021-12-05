@@ -10,9 +10,13 @@ public class VF extends  Question{
         this.bonnReponse = bonneReponse;
     }
 
+    public boolean getBonneReponse(){
+        return bonnReponse;
+    }
+
     @Override
     public String toString(){
-        return "Question No "+numero+" Type Vrai/Faux :\n"+" Difficulté"+difficulty + "\nTheme :"+theme+"\n--------- \n enonce "+enonce;
+        return "Question No: "+numero+" Type: Vrai/Faux :\n"+"Difficulté: "+difficulty + "\nTheme: "+theme.getDesignation()+"\nenonce: "+enonce+"(V / F)\n---------\n\n";
     }
 
     @Override

@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed405468-1020-49ee-9879-bf26f3891a57" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/qr/phases/Phase2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/qr/phases/Phase3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/Qrgame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/Qrgame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/Qrgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/Qrgame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/Qrgame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/players/Joueurs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/players/Joueurs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/QCM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/QCM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/RC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/RC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/VF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/VF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/testqr/testQuestions/TestQuestion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/testqr/testQuestions/TestQuestion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/Qrgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Qrgame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/players/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/players/Joueur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/players/Joueurs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/players/Joueurs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/questions/QCM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/QCM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/questions/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/questions/RC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/RC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/questions/VF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/VF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testqr/testQuestions/TestQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testqr/testQuestions/TestQuestion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +56,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Qrgame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="qr.Qrgame" />
+      <option name="MAIN_CLASS_NAME" value="qr.phases.Qrgame" />
       <module name="question-reponses" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="qr.*" />
+          <option name="PATTERN" value="qr.phases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,7 +97,7 @@
       <workItem from="1637785540995" duration="7255000" />
       <workItem from="1637828456892" duration="751000" />
       <workItem from="1638436275669" duration="1533000" />
-      <workItem from="1638547766486" duration="35388000" />
+      <workItem from="1638547766486" duration="52252000" />
     </task>
     <servers />
   </component>
