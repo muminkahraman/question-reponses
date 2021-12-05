@@ -1,5 +1,6 @@
 package qr.questions;
 
+import qr.Qrgame;
 import qr.themes.Theme;
 import qr.themes.Themes;
 
@@ -27,7 +28,7 @@ public abstract class Question {
             }*/
 
         //On rajoute cette question dans la grande liste de Questions
-            Questions.addQuestion(this);
+            Qrgame.getQuestions().addQuestion(this);
             theme.getListThemeQuestions().add(this);
         }
 
