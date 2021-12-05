@@ -18,7 +18,7 @@ public class Joueur {
 
     @Override
     public String toString(){
-        return "Joueur numero: "+ numeroJoueur+ "\n"+"Nom: "+nomJoueur+"\n"+"Score: "+score+"Etat: "+etatJoueur;
+        return "Joueur numero: "+ numeroJoueur+ "\n"+"Nom: "+nomJoueur+"\n"+"Score: "+score+" Etat: "+etatJoueur;
     }
 
     public PlayerState getEtatJoueur() {

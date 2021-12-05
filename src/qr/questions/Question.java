@@ -19,6 +19,7 @@ public abstract class Question {
         //On rajoute directement cette question dans la liste des questions
         // de son thème
         this.theme = theme;
+
         /*for(Theme t : Themes.getThemeList()){
             if(t.getDesignation()==theme){
                 this.theme = t;
@@ -27,6 +28,7 @@ public abstract class Question {
 
         //On rajoute cette question dans la grande liste de Questions
             Questions.addQuestion(this);
+            theme.getListThemeQuestions().add(this);
         }
 
     @Override

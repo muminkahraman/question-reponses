@@ -64,7 +64,7 @@ public class Themes implements Iterable<Theme> {
     }
 
     /**
-     * méthode qui retourne une représnetation textuelle de tous les thèmes et de
+     * méthode qui retourne une représentation textuelle de tous les thèmes et de
      * leurs questions
      * @return
      */
