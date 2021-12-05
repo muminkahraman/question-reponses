@@ -10,11 +10,13 @@ import qr.themes.Themes;
 
 public class Qrgame implements Phase {
     private static final Scanner scanner = new Scanner(System.in);
+    private static Themes themes = new Themes();
     private static Questions questions = new Questions();
+    private static Joueurs joueurs = new Joueurs();
 
    public static void main(String[] args){
-      Joueurs joueurs = new Joueurs();
-      Themes themes = new Themes();
+
+
 
 
        System.out.println("*****************************************************\n \t\t\t\tJEU QUESTION / REPONSE \n*****************************************************");
@@ -42,6 +44,10 @@ public class Qrgame implements Phase {
 
     public static Questions getQuestions() {
         return questions;
+    }
+
+    public static Themes getThemes() {
+        return themes;
     }
 
     private static int gameChoice() throws ExitException {

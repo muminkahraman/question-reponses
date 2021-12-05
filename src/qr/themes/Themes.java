@@ -14,10 +14,10 @@ public class Themes implements Iterable<Theme> {
             "TRAVELLING",// 6
             "INTERNET",// 7
             "FOOD",// 8
-            "REAL_ESTATE"// 9
+            "EFREI"// 9
     };
 
-    private static ArrayList<Theme> themeList;
+    private  ArrayList<Theme> themeList;
 
 
     public Themes(){
@@ -29,11 +29,11 @@ public class Themes implements Iterable<Theme> {
         }
     }
 
-    public static ArrayList<Theme> getThemeList() {
+    public  ArrayList<Theme> getThemeList() {
         return themeList;
     }
 
-    public static void afficherLesThemes() {
+    public  void afficherLesThemes() {
         String resultat = "Liste des thèmes\n--------------------\n";
         int i = 1;
         for(Theme t: themeList){
