@@ -2,14 +2,13 @@ package qr.phases;
 
 import java.util.*;
 
-import exceptions.ExitException;
+import exceptions.*;
 import interfaces.Phase;
 import qr.players.Joueur;
-import qr.players.Joueurs;
+import qr.players.*;
 import qr.questions.*;
 import qr.themes.Theme;
 import qr.themes.Themes;
-import testqr.testQuestions.TestQuestion;
 
 /**
  * Phase I

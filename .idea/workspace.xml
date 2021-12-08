@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed405468-1020-49ee-9879-bf26f3891a57" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/testqr/TestQuesstion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/phases/Qrgame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/phases/Qrgame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/players/Joueur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/players/Joueur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/players/Joueurs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/players/Joueurs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/RC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/RC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/VF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/VF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/testqr/testQuestions/TestQuestion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/testqr/testQuestions/TestQuestion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testqr/testPlayers/TestJoueur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/qr/phases/Qrgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Qrgame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,11 +64,11 @@
       </method>
     </configuration>
     <configuration name="TestQuesstion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testqr.TestQuesstion" />
+      <option name="MAIN_CLASS_NAME" value="testqr.testQuestions.TestQuesstion" />
       <module name="question-reponses" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testqr.*" />
+          <option name="PATTERN" value="qr.questions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,7 +110,7 @@
       <workItem from="1638877602953" duration="111000" />
       <workItem from="1638877730516" duration="575000" />
       <workItem from="1638899480277" duration="1194000" />
-      <workItem from="1638947652143" duration="2090000" />
+      <workItem from="1638947652143" duration="5245000" />
     </task>
     <servers />
   </component>
