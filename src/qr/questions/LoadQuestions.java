@@ -1,4 +1,4 @@
-package testqr.testQuestions;
+package qr.questions;
 
 import qr.phases.Qrgame;
 import qr.questions.Difficulty;
@@ -6,7 +6,7 @@ import qr.questions.QCM;
 import qr.questions.RC;
 import qr.questions.VF;
 
-public class TestQuestion {
+public class LoadQuestions {
     public static void createQuestions(){
         //Création des types QCMs
         QCM qcm1 = (QCM) QCM.saisieQuestion(
