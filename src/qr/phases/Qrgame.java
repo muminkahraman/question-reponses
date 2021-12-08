@@ -123,7 +123,7 @@ public class Qrgame implements Phase {
                     player.setScore(player.getScore()+2);
                 }
                 else{
-                    System.out.println("Mauvaise..bonne reponse");
+                    System.out.println("Oups..Mauvaise reponse");
                     player.setScore(player.getScore()-1);
                 }
             }
@@ -133,7 +133,7 @@ public class Qrgame implements Phase {
                     player.setScore(player.getScore()+2);
                 }
                 else{
-                    System.out.println("Mauvaise..bonne reponse");
+                    System.out.println("Oups..Mauvaise reponse");
                     player.setScore(player.getScore()-1);
                 }
             }
@@ -144,7 +144,7 @@ public class Qrgame implements Phase {
                     player.setScore(player.getScore()+2);
                 }
                 else{
-                    System.out.println("Mauvaise..bonne reponse");
+                    System.out.println("Oups..Mauvaise reponse");
                     player.setScore(player.getScore()-1);
                 }
             }
