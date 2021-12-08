@@ -35,7 +35,7 @@ public class Qrgame implements Phase {
               System.out.println(joueurs);
 
               //saisie en dur des questions
-              TestQuestion.createQuestions();
+              LoadQuestions.createQuestions();
               Theme themeChoisi = themeChoice();
               //System.out.println(themeChoisi.toStringWithAllQuestions());
 
