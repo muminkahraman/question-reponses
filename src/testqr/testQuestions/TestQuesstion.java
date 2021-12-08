@@ -1,4 +1,4 @@
-package testqr;
+package testqr.testQuestions;
 
 import qr.phases.Qrgame;
 import qr.questions.*;
