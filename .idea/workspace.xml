@@ -3,28 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ed405468-1020-49ee-9879-bf26f3891a57" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/phases/Qrgame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/phases/Qrgame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/QCM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/QCM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/Questions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/Questions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/RC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/RC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/VF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/questions/VF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/themes/Theme.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/themes/Theme.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/qr/themes/Themes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/qr/themes/Themes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/testqr/TestQuesstion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/question-reponses/testqr/testQuestions/TestQuestion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/question-reponses/testqr/testQuestions/TestQuestion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/qr/phases/Qrgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Qrgame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/qr/players/Joueurs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/players/Joueurs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/questions/LoadQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/LoadQuestions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/questions/QCM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/QCM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/questions/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/questions/Questions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/Questions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/qr/questions/RC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/RC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/questions/VF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/VF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/themes/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/themes/Theme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/themes/Themes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/themes/Themes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testqr/testQuestions/TestQuesstion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testqr/testQuestions/TestQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testqr/testThemes/TestTheme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testqr/testThemes/TestTheme.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,17 +91,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Qrgame" />
@@ -147,7 +117,8 @@
       <workItem from="1638899480277" duration="1194000" />
       <workItem from="1638947652143" duration="9466000" />
       <workItem from="1639063676043" duration="10684000" />
-      <workItem from="1639077190330" duration="5303000" />
+      <workItem from="1639077190330" duration="8360000" />
+      <workItem from="1639129588710" duration="5210000" />
     </task>
     <servers />
   </component>

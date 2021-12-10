@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Joueurs {
-    private Joueur[] listJoueurs;
+    private Joueur[] players;
     private Joueur[] randomPlayers;
 
     public Joueurs(){
 
-        listJoueurs = new Joueur[]{
+        players = new Joueur[]{
                 new Joueur("A"),
                 new Joueur("B"),
                 new Joueur("C"),
@@ -35,14 +35,14 @@ public class Joueurs {
 
     }
 
-    public Joueur[] getListJoueurs() {
-        return listJoueurs;
+    public Joueur[] getPlayers() {
+        return players;
     }
 
     int index = new Random().nextInt(20);
 
     public Joueur pickAPlayer(){
-        return listJoueurs[index];
+        return players[index];
     }
 
     public void setRandomPlayers(){
@@ -56,11 +56,11 @@ public class Joueurs {
         Joueur[] randomPlayers = new Joueur[numberOfChosenPlayers];
 
         for(int i=0; i < numberOfChosenPlayers; ++i){
-            Joueur j = listJoueurs[(int)(Math.random()* 19)];
+            Joueur j = players[(int)(Math.random()* 19)];
             //on vérifie si le joueur aléatoire est déjà dans la liste
             //des randoms players. Si non, on l'ajoute
             while((Arrays.stream(randomPlayers).anyMatch(j::equals))){
-                j = listJoueurs[(int)(Math.random()* 19)];
+                j = players[(int)(Math.random()* 19)];
             }
 
             randomPlayers[i] = j;
@@ -79,11 +79,15 @@ public class Joueurs {
         return randomPlayers;
     }
 
+    public void currentPlayers(){
+
+    }
+
     @Override
     public String toString(){
         String result = "Nombre de joueurs aléatoires choisi: "+randomPlayers.length+"\n";
         for (Joueur j: this.randomPlayers) {
-            result+= j.toString()+"\n\n";
+            result+= j.toString()+"\n";
         }
         return  result;
     }

@@ -17,7 +17,7 @@ public class RC extends Question{
 
     @Override
     public String toString(){
-        return "Question No: "+numero+" Type: Réponse Courte (Saisis un cours texte ou chiffre) :\n"+"Difficulté: "+difficulty + "\nTheme :"+theme.getDesignation()+"\nenonce: "+enonce+"\n--------- \n";
+        return "Question No: "+numero+" Type: Réponse Courte (Saisis un texte court ou chiffre) :\n"+"Difficulté: "+difficulty + "\nTheme :"+theme.getDesignation()+"\nenonce: "+enonce+"\n--------- \n";
     }
 
     @Override
