@@ -85,6 +85,6 @@ public class Joueurs {
         for (Joueur j: this.randomPlayers) {
             result+= j.toString()+"\n\n";
         }
-        return "Liste des Joueurs participant au Jeu\n---------------------------------------\n"+ result;
+        return  result;
     }
 }

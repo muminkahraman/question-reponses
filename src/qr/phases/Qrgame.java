@@ -31,6 +31,7 @@ public class Qrgame implements Phase {
               System.out.println("*****************************************************\n \t\t\t\tPHASE 1 \n*****************************************************");
 
               joueurs.setRandomPlayers();
+              System.out.println("Liste des Joueurs participant au Jeu\n---------------------------------------");
               System.out.println(joueurs);
 
               //saisie en dur des questions
@@ -159,11 +160,7 @@ public class Qrgame implements Phase {
 
         }
 
-        //System.out.println(joueurs);
-
         Integer[] playerScores = new Integer[joueurs.getRandomPlayers().length];
-
-        Map<HashMap<Integer, String>, Integer> currentplayers = new HashMap<HashMap<Integer,String>,Integer >();
 
         for(int i = 0; i < joueurs.getRandomPlayers().length; ++i){
             playerScores[i] = joueurs.getRandomPlayers()[i].getScore();
@@ -172,15 +169,29 @@ public class Qrgame implements Phase {
         //Classement en ordre décroissant
         Arrays.sort(playerScores, Collections.reverseOrder());
 
-        //a customiser
         // On selectionne les 3 meilleurs pour la phase 2
         for(int i = 0; i<3;++i){
-            for(int k = 0; k < joueurs.getRandomPlayers().length; ++k){
-                if(joueurs.getRandomPlayers()[k].getScore()==playerScores[i]){
-                    phase2Players.add(joueurs.getRandomPlayers()[k]);
+                if(joueurs.getRandomPlayers()[i].getScore()==playerScores[i]){
+                    if(playerScores[i]==playerScores[i-1]){
+                        phase2Players.add(joueurs.getRandomPlayers()[i+1]);
+                        (joueurs.getRandomPlayers()[i+1]).setEtatJoueur(PlayerState.WINNER);
+                    }else{
+                        phase2Players.add(joueurs.getRandomPlayers()[i]);
+                        (joueurs.getRandomPlayers()[i]).setEtatJoueur(PlayerState.WINNER);
+                    }
                 }
-            }
         }
+
+        for(int i = 0; i < joueurs.getRandomPlayers().length; ++i){
+           if((joueurs.getRandomPlayers()[i]).getEtatJoueur() != PlayerState.WINNER ){
+               (joueurs.getRandomPlayers()[i]).setEtatJoueur(PlayerState.ELIMINATED);
+           }
+        }
+
+        System.out.println("Liste des Joueurs GAGNANTS et ELIMINÉS\n---------------------------------------");
+        System.out.println(joueurs);
+
+
     }
 
     @Override
