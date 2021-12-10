@@ -1,6 +1,7 @@
 package qr.players;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Joueurs {
     private Joueur[] listJoueurs;
@@ -38,8 +39,10 @@ public class Joueurs {
         return listJoueurs;
     }
 
+    int index = new Random().nextInt(20);
+
     public Joueur pickAPlayer(){
-        return listJoueurs[(int)(Math.random()*19)];
+        return listJoueurs[index];
     }
 
     public void setRandomPlayers(){
@@ -82,6 +85,6 @@ public class Joueurs {
         for (Joueur j: this.randomPlayers) {
             result+= j.toString()+"\n\n";
         }
-        return "Liste des Joueurs participant au Jeu\n---------------------------------------\n\n"+ result;
+        return "Liste des Joueurs participant au Jeu\n---------------------------------------\n"+ result;
     }
 }

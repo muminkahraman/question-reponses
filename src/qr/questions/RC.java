@@ -5,9 +5,9 @@ import qr.themes.Theme;
 public class RC extends Question{
     private String bonneReponse;
 
-    public RC(String enonce, int numero, Difficulty difficulty, Theme theme,
+    public RC(String enonce,Difficulty difficulty, Theme theme,
               String bonneReponse ){
-        super(enonce, numero, difficulty, theme);
+        super(enonce,difficulty, theme);
         this.bonneReponse = bonneReponse;
     }
 
@@ -17,15 +17,16 @@ public class RC extends Question{
 
     @Override
     public String toString(){
-        return "Question No: "+numero+" Type: Réponse Courte :\n"+"Difficulté: "+difficulty + "\nTheme :"+theme.getDesignation()+"\nenonce: "+enonce+"\n--------- \n\n";
+        return "Question No: "+numero+" Type: Réponse Courte (Saisis un cours texte ou chiffre) :\n"+"Difficulté: "+difficulty + "\nTheme :"+theme.getDesignation()+"\nenonce: "+enonce+"\n--------- \n";
     }
 
     @Override
-    public Question saisieQuestion() {
+    public Question saisie(String enonce, Difficulty difficulty, Theme theme) {
         return null;
     }
-    public static Question saisieQuestion(String enonce, int numero, Difficulty difficulty, Theme theme,
+
+    public static RC saisie(String enonce,Difficulty difficulty, Theme theme,
                                    String bonneReponse ) {
-        return new RC(enonce, numero, difficulty, theme, bonneReponse );
+        return new RC(enonce, difficulty, theme, bonneReponse );
     }
 }

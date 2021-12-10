@@ -2,6 +2,7 @@ package qr.themes;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class Themes implements Iterable<Theme> {
     private static String[] THEME_TITLES = {
@@ -17,26 +18,26 @@ public class Themes implements Iterable<Theme> {
             "EFREI"// 9
     };
 
-    private  ArrayList<Theme> themeList;
+    private List<Theme> themes;
 
 
     public Themes(){
         //Création en dur de tous les thèmes
 
-        themeList = new ArrayList<Theme>();
+        themes = new ArrayList<Theme>();
         for(String s: THEME_TITLES){
-            themeList.add(new Theme(s));
+            themes.add(new Theme(s));
         }
     }
 
-    public  ArrayList<Theme> getThemeList() {
-        return themeList;
+    public  List<Theme> getThemes() {
+        return themes;
     }
 
     public  void afficherLesThemes() {
         String resultat = "Liste des thèmes\n--------------------\n";
         int i = 1;
-        for(Theme t: themeList){
+        for(Theme t: themes){
             resultat+= i+" - "+t.getDesignation()+"\n";
             ++i;
         }
@@ -46,7 +47,7 @@ public class Themes implements Iterable<Theme> {
     //renvoie l'index d'un theme choisi
     public int chooseTheme(int chiffreChoisi){
 
-        return themeList.indexOf(themeList.get(chiffreChoisi));
+        return themes.indexOf(themes.get(chiffreChoisi));
     }
 
     /**
@@ -78,6 +79,6 @@ public class Themes implements Iterable<Theme> {
 
     @Override
     public Iterator<Theme> iterator() {
-        return themeList.iterator();
+        return themes.iterator();
     }
 }

@@ -9,244 +9,411 @@ import qr.questions.VF;
 public class LoadQuestions {
     public static void createQuestions(){
         //Création des types QCMs
-        QCM qcm1 = (QCM) QCM.saisieQuestion(
+        QCM qcm1 =  QCM.saisie(
                 "Le nom du prof de TD java ?",
-                0,
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(9),
+                Qrgame.getThemes().getThemes().get(9),
                 "LASCHOOT",
                 "LESCHOOT",
                 "LANDSCHOOT"
         );
 
-        QCM qcm2 = (QCM) QCM.saisieQuestion(
+        QCM qcm2 =  QCM.saisie(
                 "Le langage en circuit numérique?",
-                0,
                 Difficulty.MEDIUM,
-                Qrgame.getThemes().getThemeList().get(8),
+                Qrgame.getThemes().getThemes().get(8),
                 "VLC",
                 "VHCL",
                 "VHCL"
         );
 
-        QCM qcm3 = (QCM) QCM.saisieQuestion(
+        QCM qcm3 =  QCM.saisie(
                 "Le nom du prof de TD java ?",
-                0,
                 Difficulty.HARD,
-                Qrgame.getThemes().getThemeList().get(7),
+                Qrgame.getThemes().getThemes().get(7),
                 "LASCHOOT",
                 "LESCHOOT",
                 "LANDSCHOOT"
         );
 
-        QCM qcm4 = (QCM) QCM.saisieQuestion(
+        QCM qcm4 =  QCM.saisie(
                 "Ma marque d'eau minérale",
-                0,
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(7),
+                Qrgame.getThemes().getThemes().get(7),
                 "CRISTAL",
                 "CRISTALI",
                 "CRISTALINE"
         );
 
-        QCM qcm5 = (QCM) QCM.saisieQuestion(
+        QCM qcm5 =  QCM.saisie(
                 "Dernier Film de THE ROCK",
-                0,
                 Difficulty.MEDIUM,
-                Qrgame.getThemes().getThemeList().get(6),
+                Qrgame.getThemes().getThemes().get(6),
                 "ELITE",
                 "WWW",
                 "RED NOTICE"
         );
 
-        QCM qcm6 = (QCM) QCM.saisieQuestion(
+        QCM qcm6 =  QCM.saisie(
                 "Dernier Film de THE ROCK",
-                0,
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(5),
+                Qrgame.getThemes().getThemes().get(5),
                 "ELITE",
                 "WWW",
                 "RED NOTICE"
         );
 
-        QCM qcm7 = (QCM) QCM.saisieQuestion(
+        QCM qcm7 =  QCM.saisie(
                 "Dernier Film de THE ROCK",
-                0,
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(4),
+                Qrgame.getThemes().getThemes().get(4),
                 "ELITE",
                 "WWW",
                 "JUMANJI"
         );
 
-        QCM qcm8 = (QCM) QCM.saisieQuestion(
+        QCM qcm8 =  QCM.saisie(
                 "Le best E-SPORT MOBA",
-                0,
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(3),
+                Qrgame.getThemes().getThemes().get(3),
                 "ELITE",
                 "YOYO",
                 "LOL"
         );
 
-        QCM qcm9 = (QCM) QCM.saisieQuestion(
+        QCM qcm9 =  QCM.saisie(
                 "Le best E-SPORT MOBA",
-                0,
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(2),
+                Qrgame.getThemes().getThemes().get(2),
                 "ELITE",
                 "YOYO",
                 "LOL"
         );
 
-        QCM qcm10 = (QCM) QCM.saisieQuestion(
+        QCM qcm10 =  QCM.saisie(
                 "Le best E-SPORT MOBA",
-                0,
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(3),
+                Qrgame.getThemes().getThemes().get(3),
                 "ELITE",
                 "YOYO",
                 "LOL"
         );
 
+        QCM qcm11 =  QCM.saisie(
+                "Le best E-SPORT MOBA",
+                Difficulty.HARD,
+                Qrgame.getThemes().getThemes().get(0),
+                "ELITE",
+                "YOYO",
+                "LOL"
+        );
+
+        QCM qcm12 =  QCM.saisie(
+                "Le best E-SPORT MOBA",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(4),
+                "ELITE",
+                "YOYO",
+                "LOL"
+        );
+
+        QCM qcm13 =  QCM.saisie(
+                "Le joueur en avant sur FIFA 22",
+                Difficulty.MEDIUM,
+                Qrgame.getThemes().getThemes().get(2),
+                "Mbappe",
+                "Rashford",
+                "Choupo Moting"
+        );
+        QCM qcm14 =  QCM.saisie(
+                "Le meilleur trio d'attaque de l'espagne",
+                Difficulty.MEDIUM,
+                Qrgame.getThemes().getThemes().get(6),
+                "CR7",
+                "BBC",
+                "MSN"
+        );
+
+        QCM qcm15 =  QCM.saisie(
+                "Le meilleur trio d'attaque de l'espagne",
+                Difficulty.MEDIUM,
+                Qrgame.getThemes().getThemes().get(7),
+                "CR7",
+                "BBC",
+                "MSN"
+        );
+
+        QCM qcm16 =  QCM.saisie(
+                "Le nom du responsable dissertation orale?",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(9),
+                "SAMOA",
+                "ZOLA",
+                "SOMA"
+        );
 
 
         //Création des types RC
-        RC rc1 = (RC) RC.saisieQuestion(
+        RC rc1 =  RC.saisie(
                 "Le capitaine du PSG ?",
-                0,
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(0),
+                Qrgame.getThemes().getThemes().get(0),
                 "Marquinios"
         );
 
-        RC rc2 = (RC) RC.saisieQuestion(
+        RC rc2 =  RC.saisie(
                 "Le coach du fc barcelone ?",
-                0,
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(0),
+                Qrgame.getThemes().getThemes().get(0),
                 "XAVI"
         );
 
-        RC rc3 = (RC) RC.saisieQuestion(
+        RC rc3 =  RC.saisie(
                 "Le coach du fc barcelone ?",
-                0,
                 Difficulty.HARD,
-                Qrgame.getThemes().getThemeList().get(1),
+                Qrgame.getThemes().getThemes().get(1),
                 "XAVI"
         );
 
-        RC rc4 = (RC) RC.saisieQuestion(
+        RC rc4 =  RC.saisie(
                 "Le coach du fc barcelone ?",
-                0,
+                
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(2),
+                Qrgame.getThemes().getThemes().get(2),
                 "XAVI"
         );
 
-        RC rc5 = (RC) RC.saisieQuestion(
+        RC rc41 =  RC.saisie(
                 "Le coach du fc barcelone ?",
-                0,
+
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(4),
+                "XAVI"
+        );
+
+        RC rc5 =  RC.saisie(
+                "Le coach du fc barcelone ?",
                 Difficulty.HARD,
-                Qrgame.getThemes().getThemeList().get(3),
+                Qrgame.getThemes().getThemes().get(3),
                 "XAVI"
         );
 
-        RC rc6 = (RC) RC.saisieQuestion(
+        RC rc6 =  RC.saisie(
                 "Le coach du fc barcelone ?",
-                0,
+                
                 Difficulty.MEDIUM,
-                Qrgame.getThemes().getThemeList().get(4),
+                Qrgame.getThemes().getThemes().get(4),
                 "XAVI"
         );
 
-        RC rc7 = (RC) RC.saisieQuestion(
+        RC rc7 =  RC.saisie(
                 "Le coach du fc barcelone ?",
-                0,
+                
                 Difficulty.MEDIUM,
-                Qrgame.getThemes().getThemeList().get(5),
+                Qrgame.getThemes().getThemes().get(5),
                 "XAVI"
         );
 
-        RC rc8 = (RC) RC.saisieQuestion(
+        RC rc8 =  RC.saisie(
                 "Le tableau est vert",
-                0,
+                
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(4),
+                Qrgame.getThemes().getThemes().get(4),
                 "OUI"
         );
 
+        RC rc9 =  RC.saisie(
+                "fc barcelone en europa league ?",
+                Difficulty.HARD,
+                Qrgame.getThemes().getThemes().get(0),
+                "OUI"
+        );
+
+        RC rc10 =  RC.saisie(
+                "Le coach du fc barcelone ?",
+                Difficulty.HARD,
+                Qrgame.getThemes().getThemes().get(3),
+                "XAVI"
+        );
+
+        RC rc11 =  RC.saisie(
+                "Le coach du fc barcelone ?",
+                Difficulty.HARD,
+                Qrgame.getThemes().getThemes().get(7),
+                "EVANS"
+        );
+
+        RC rc12 =  RC.saisie(
+                "L'anime avec le plus d'épisodes ?",
+                Difficulty.HARD,
+                Qrgame.getThemes().getThemes().get(6),
+                "EVANS"
+        );
+
+        RC rc13 =  RC.saisie(
+                "Cobra de manga a une main??",
+                Difficulty.HARD,
+                Qrgame.getThemes().getThemes().get(9),
+                "OUI"
+        );
+
+        RC rc14 =  RC.saisie(
+                "Oub c'est bouboul ?",
+                Difficulty.HARD,
+                Qrgame.getThemes().getThemes().get(1),
+                "OUI"
+        );
+
+        RC rc15 =  RC.saisie(
+                "Le campus de Gorki est le plus équipé",
+                Difficulty.MEDIUM,
+                Qrgame.getThemes().getThemes().get(9),
+                "NON"
+        );
+
+
         //Création des types VF
-        VF vf1 = (VF) VF.saisieQuestion(
+        VF vf1 =  VF.saisie(
                 "Messi a remporté 7 ballons d'or ?",
-                0,
+                
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(0),
+                Qrgame.getThemes().getThemes().get(0),
                 true
         );
 
-        VF vf2 = (VF) VF.saisieQuestion(
+        VF vf2 =  VF.saisie(
                 "Le projet marche",
-                0,
+                
                 Difficulty.MEDIUM,
-                Qrgame.getThemes().getThemeList().get(6),
+                Qrgame.getThemes().getThemes().get(6),
                 true
         );
 
-        VF vf3 = (VF) VF.saisieQuestion(
+        VF vf3 =  VF.saisie(
                 "Le projet marche",
-                0,
+                
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(7),
+                Qrgame.getThemes().getThemes().get(7),
                 true
         );
-        VF vf4 = (VF) VF.saisieQuestion(
+        VF vf4 =  VF.saisie(
                 "Le projet marche",
-                0,
+                
                 Difficulty.HARD,
-                Qrgame.getThemes().getThemeList().get(8),
+                Qrgame.getThemes().getThemes().get(8),
                 true
         );
 
-        VF vf5 = (VF) VF.saisieQuestion(
+        VF vf5 =  VF.saisie(
                 "Le projet marche",
-                0,
+                
                 Difficulty.MEDIUM,
-                Qrgame.getThemes().getThemeList().get(8),
+                Qrgame.getThemes().getThemes().get(8),
                 true
         );
 
-        VF vf6 = (VF) VF.saisieQuestion(
+        VF vf6 =  VF.saisie(
                 "Le projet voltaire marche",
-                0,
+                
                 Difficulty.HARD,
-                Qrgame.getThemes().getThemeList().get(8),
+                Qrgame.getThemes().getThemes().get(8),
                 false
         );
 
-        VF vf7 = (VF) VF.saisieQuestion(
+        VF vf7 =  VF.saisie(
                 "Le projet voltaire marche",
-                0,
+                
                 Difficulty.EASY,
-                Qrgame.getThemes().getThemeList().get(2),
+                Qrgame.getThemes().getThemes().get(2),
                 false
         );
 
-        VF vf8 = (VF) VF.saisieQuestion(
+        VF vf8 =  VF.saisie(
                 "Le projet voltaire marche",
-                0,
+                
                 Difficulty.HARD,
-                Qrgame.getThemes().getThemeList().get(3),
+                Qrgame.getThemes().getThemes().get(3),
                 false
         );
 
-        VF vf9 = (VF) VF.saisieQuestion(
+        VF vf9 =  VF.saisie(
                 "Le Kebab est mieux que le Tacos ",
-                0,
+                
                 Difficulty.HARD,
-                Qrgame.getThemes().getThemeList().get(8),
+                Qrgame.getThemes().getThemes().get(8),
                 false
         );
+
+        VF vf10 =  VF.saisie(
+                "Le projet marche ?",
+
+                Difficulty.MEDIUM,
+                Qrgame.getThemes().getThemes().get(3),
+                true
+        );
+
+        VF vf11 =  VF.saisie(
+                "Le projet marche ?",
+
+                Difficulty.MEDIUM,
+                Qrgame.getThemes().getThemes().get(0),
+                true
+        );
+
+        VF vf12 =  VF.saisie(
+                "Le Kebab est mieux que le Tacos ",
+
+                Difficulty.MEDIUM,
+                Qrgame.getThemes().getThemes().get(1),
+                false
+        );
+        VF vf13 =  VF.saisie(
+                "Le Kebab est mieux que le Tacos ",
+
+                Difficulty.MEDIUM,
+                Qrgame.getThemes().getThemes().get(2),
+                false
+        );
+        VF vf14 =  VF.saisie(
+                "Le Kebab est mieux que le Tacos ",
+
+                Difficulty.MEDIUM,
+                Qrgame.getThemes().getThemes().get(5),
+                false
+        );
+        VF vf15 =  VF.saisie(
+                "Le Kebab est mieux que le Tacos ",
+
+                Difficulty.MEDIUM,
+                Qrgame.getThemes().getThemes().get(6),
+                false
+        );
+
+        VF vf16 =  VF.saisie(
+                "La Théorie du signl est importante pour un software enginner",
+
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(1),
+                false
+        );
+
+        VF vf17 =  VF.saisie(
+                "Peter parker est iron man",
+
+                Difficulty.MEDIUM,
+                Qrgame.getThemes().getThemes().get(1),
+                false
+        );
+
+        VF vf18 =  VF.saisie(
+                "Le crous se trouve dans le bâtiment B?",
+                Difficulty.MEDIUM,
+                Qrgame.getThemes().getThemes().get(9),
+                false
+        );
+
+
+
 
     }
 }

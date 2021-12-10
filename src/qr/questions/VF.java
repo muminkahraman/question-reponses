@@ -4,9 +4,9 @@ import qr.themes.Theme;
 
 public class VF extends  Question{
     private boolean bonnReponse;
-    public VF(String enonce, int numero, Difficulty difficulty, Theme theme,
+    public VF(String enonce,Difficulty difficulty, Theme theme,
                boolean bonneReponse){
-        super(enonce, numero, difficulty, theme);
+        super(enonce,difficulty, theme);
         this.bonnReponse = bonneReponse;
     }
 
@@ -16,15 +16,17 @@ public class VF extends  Question{
 
     @Override
     public String toString(){
-        return "Question No: "+numero+" Type: Vrai/Faux :\n"+"Difficulté: "+difficulty + "\nTheme: "+theme.getDesignation()+"\nenonce: "+enonce+"(V / F)\n---------\n\n";
+        return "Question No: "+numero+" Type: Vrai/Faux :\n"+
+                "Difficulté: "+difficulty + "\nTheme: "
+                +theme.getDesignation()+"\nenonce: "+enonce+"(Tape V / F)\n---------\n";
     }
 
     @Override
-    public Question saisieQuestion() {
+    public  Question saisie(String enonce, Difficulty difficulty, Theme theme) {
         return null;
     }
-    public static Question saisieQuestion(String enonce, int numero, Difficulty difficulty, Theme theme,
+    public static VF saisie(String enonce, Difficulty difficulty, Theme theme,
                                    boolean bonneReponse) {
-        return new VF(enonce, numero, difficulty, theme, bonneReponse );
+        return new VF(enonce,difficulty, theme, bonneReponse );
     }
 }

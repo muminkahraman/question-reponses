@@ -5,14 +5,14 @@ import java.util.List;
 
 public class Questions {
     private static int NUMERO_DE_QUESTION = 1;
-    private  List<Question> listOfAllQuestions;
+    private  List<Question> allQuestions;
 
     public Questions(){
-        listOfAllQuestions = new ArrayList<Question>();
+        allQuestions = new ArrayList<Question>();
     }
 
     public  void addQuestion(Question question){
-        listOfAllQuestions.add(question);
+        allQuestions.add(question);
         //On  attribue comme numéro de question séquentielle la valeur
         //actuelle de NUMERO_DE_QUESTION
 
@@ -21,11 +21,11 @@ public class Questions {
     }
 
     public  List<Question> getListOfAllQuestions() {
-        return listOfAllQuestions;
+        return allQuestions;
     }
 
     public  void deleteQuestionByRank(int rank){
-        listOfAllQuestions.remove(rank);
+        allQuestions.remove(rank);
     }
 
     public  void selectQuestion(){

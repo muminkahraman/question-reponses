@@ -7,20 +7,20 @@ import java.util.*;
 public class Theme implements Iterable<Question> {
     private final String designation;
     private int chosenIndicator;//1 if chosen , o otherwise
-    private List<Question> listThemeQuestions;
+    private List<Question> themeQuestions;
 
     public Theme(final String  designation){
         this.designation = designation;
         chosenIndicator = 0;
-        listThemeQuestions = new ArrayList<Question>();
+        themeQuestions = new ArrayList<Question>();
     }
 
     public String getDesignation() {
         return designation;
     }
 
-    public List<Question> getListThemeQuestions() {
-        return listThemeQuestions;
+    public List<Question> getThemeQuestions() {
+        return themeQuestions;
     }
 
     public int getChosenIndicator() {
@@ -46,6 +46,6 @@ public class Theme implements Iterable<Question> {
 
     @Override
     public Iterator<Question> iterator() {
-        return listThemeQuestions.iterator();
+        return themeQuestions.iterator();
     }
 }

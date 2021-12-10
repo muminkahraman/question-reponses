@@ -9,11 +9,11 @@ public class TestTheme {
     public static void main(String[] args){
         themes.afficherLesThemes();
         System.out.println(themes.getThemesWithQuestions());
-        System.out.println(themes.getThemeList().get(1).getDesignation());
-        System.out.println(themes.getThemeList().get(1).getChosenIndicator());
+        System.out.println(themes.getThemes().get(1).getDesignation());
+        System.out.println(themes.getThemes().get(1).getChosenIndicator());
 
-        themes.getThemeList().get(1).setChosenIndicator(1);
-        System.out.println(themes.getThemeList().get(1).getChosenIndicator());
+        themes.getThemes().get(1).setChosenIndicator(1);
+        System.out.println(themes.getThemes().get(1).getChosenIndicator());
 
 
     }

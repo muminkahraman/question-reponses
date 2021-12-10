@@ -10,9 +10,8 @@ public abstract class Question {
     protected Difficulty difficulty;
     protected Theme theme;
 
-    public Question(String enonce, int numero, Difficulty difficulty, Theme theme){
+    public Question(String enonce, Difficulty difficulty, Theme theme){
         this.enonce = enonce;
-        this.numero = numero;
         this.indicator = 0;
         this.difficulty = difficulty;
 
@@ -28,7 +27,7 @@ public abstract class Question {
 
         //On rajoute cette question dans la grande liste de Questions
             Qrgame.getQuestions().addQuestion(this);
-            theme.getListThemeQuestions().add(this);
+            theme.getThemeQuestions().add(this);
         }
 
     @Override
@@ -36,7 +35,7 @@ public abstract class Question {
         return "Une Question";
     }
 
-    public abstract Question saisieQuestion();
+    public abstract Question saisie(String enonce, Difficulty difficulty, Theme theme);
 
     public int getNumero() {
         return numero;

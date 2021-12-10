@@ -7,9 +7,9 @@ public class QCM extends Question{
     private String reponse2;
     private String bonneReponse;
 
-    public QCM(String enonce, int numero, Difficulty difficulty, Theme theme,
+    public QCM(String enonce,Difficulty difficulty, Theme theme,
                String reponse1, String reponse2, String bonneReponse ){
-        super(enonce, numero, difficulty, theme);
+        super(enonce,difficulty, theme);
         this.reponse1 = reponse1;
         this.reponse2 = reponse2;
         this.bonneReponse = bonneReponse;
@@ -18,15 +18,24 @@ public class QCM extends Question{
 
     @Override
     public String toString(){
-        return "Question No: "+numero+" Type: QCM\n"+"Difficulté: "+difficulty + "\nTheme: "+theme.getDesignation()+"\nenonce: "+enonce+"\n A. "+reponse1+"\n B. "+reponse2+"\n C."+bonneReponse+"\n--------- \n\n";
+        return "Question No: "+numero+" Type: QCM (Choisis une lettre parmi les options)\n" + "Difficulté: "+difficulty +
+                "\nTheme: "+theme.getDesignation()+"\nenonce: "+enonce+"\n A. "+reponse1+"\n B. "
+                +reponse2+"\n C."+bonneReponse+"\n---------\n";
     }
 
     @Override
-    public Question saisieQuestion() {
+    public Question saisie(String enonce, Difficulty difficulty, Theme theme) {
         return null;
     }
-    public static Question saisieQuestion(String enonce, int numero, Difficulty difficulty, Theme theme,
-                                   String reponse1, String reponse2, String bonneReponse) {
-        return new QCM(enonce, numero, difficulty, theme, reponse1,reponse2, bonneReponse);
+
+    public static QCM saisie(String enonce, Difficulty difficulty, Theme theme,
+                      String reponse1, String reponse2, String bonneReponse) {
+
+        return new QCM(enonce, difficulty, theme, reponse1,reponse2, bonneReponse);
     }
+
+    /*public static Question saisie(String enonce, Difficulty difficulty, Theme theme,
+                                   String reponse1, String reponse2, String bonneReponse) {
+        return new QCM(enonce, difficulty, theme, reponse1,reponse2, bonneReponse);
+    }*/
 }

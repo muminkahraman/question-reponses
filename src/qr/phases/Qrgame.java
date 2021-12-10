@@ -41,8 +41,6 @@ public class Qrgame implements Phase {
               //La première phase se joue et on rempli la liste des joueurs pour la phase 2
               startGame(themeChoisi);
 
-
-
           }
       }
       catch (ExitException ex){
@@ -78,7 +76,7 @@ public class Qrgame implements Phase {
     }
 
     private static Theme themeChoice() {
-        System.out.println("Choisir un thème\n----------------------\n");
+        System.out.println("Choisir un thème\n----------------------");
         themes.afficherLesThemes();
         Scanner sc = new Scanner(System.in);
         String choice = sc.nextLine();
@@ -86,12 +84,12 @@ public class Qrgame implements Phase {
         Theme chosenTheme = null;
 
 
-        while (!choice.matches("\\d+") || (nbChoice = Integer.parseInt(choice)) < 0 || nbChoice > themes.getThemeList().size()) {
+        while (!choice.matches("\\d+") || (nbChoice = Integer.parseInt(choice)) < 0 || nbChoice > themes.getThemes().size()) {
             System.out.println("Choix invalide !\n\nEssayez encore :");
             choice = sc.nextLine();
         }
 
-        chosenTheme =  themes.getThemeList().get(Integer.parseInt(choice)-1);
+        chosenTheme =  themes.getThemes().get(Integer.parseInt(choice)-1);
         if(chosenTheme.getChosenIndicator()==1){
             System.err.println("Ce thème a déjà été choisi ! Choisissez un autre :");
             themeChoice();
@@ -103,31 +101,42 @@ public class Qrgame implements Phase {
 
     }
 
-    private static void startGame(Theme theme){
-        List<Question> questions = theme.getListThemeQuestions();
-        for(Joueur player: joueurs.getRandomPlayers()){
-            System.out.println("Joueur "+player.getNomJoueur()+"\n---------------\n");
-            Scanner sc = new Scanner(System.in);
+    private static Question pickRandomQuestion(Theme theme){
+        List<Question> q = theme.getThemeQuestions();
+        int index = new Random().nextInt(q.size());
 
-            Question q = questions.get((int)Math.random()* (questions.size()-1));
-            while(q.getIndicator()==1){
-                q = questions.get((int)Math.random()* (questions.size()-1));
+        return q.get(index);
+    }
+
+    private static void startGame(Theme theme){
+        Scanner sc = new Scanner(System.in);
+         //Question q = pickRandomQuestion(theme);
+
+        for(Joueur player: joueurs.getRandomPlayers()){
+            System.out.println("Joueur "+player.getNomJoueur()+"\n---------------");
+            Question q = pickRandomQuestion(theme);
+
+            while((q.getIndicator()==1)){
+                q = pickRandomQuestion(theme);
             }
+
             q.setIndicator(1);
             System.out.println(q);
             String reponse = sc.nextLine();
+
             if(q instanceof QCM){
-                if(reponse=="D" || reponse == "d"){
+                if(reponse.equalsIgnoreCase("C")){
                     System.out.println("Bravo..bonne reponse");
-                    player.setScore(player.getScore()+2);
+                    player.setScore(player.getScore() + 2);
                 }
-                else{
+                else {
                     System.out.println("Oups..Mauvaise reponse");
                     player.setScore(player.getScore()-1);
                 }
             }
-            if(q instanceof RC){
-                if(reponse==((RC) q).getBonneReponse()){
+
+            if(q instanceof RC ){
+                if(reponse.equalsIgnoreCase(((RC)q).getBonneReponse())){
                     System.out.println("Bravo..bonne reponse");
                     player.setScore(player.getScore()+2);
                 }
@@ -137,19 +146,24 @@ public class Qrgame implements Phase {
                 }
             }
             if(q instanceof VF){
-                if( (((VF)q).getBonneReponse() && (reponse=="V" || reponse=="v"))
-                        || (!(((VF)q).getBonneReponse()) && (reponse=="F" || reponse=="f"))   ){
+                if((((VF)q).getBonneReponse() && (reponse.equalsIgnoreCase("V")))
+                        || (!(((VF)q).getBonneReponse()) && (reponse.equalsIgnoreCase("F")))){
                     System.out.println("Bravo..bonne reponse");
-                    player.setScore(player.getScore()+2);
+                    player.setScore(player.getScore() + 2);
                 }
-                else{
-                    System.out.println("Oups..Mauvaise reponse");
-                    player.setScore(player.getScore()-1);
+                else {
+                        System.out.println("Oups..Mauvaise reponse");
+                        player.setScore(player.getScore()-1);
                 }
             }
+
         }
 
+        //System.out.println(joueurs);
+
         Integer[] playerScores = new Integer[joueurs.getRandomPlayers().length];
+
+        Map<HashMap<Integer, String>, Integer> currentplayers = new HashMap<HashMap<Integer,String>,Integer >();
 
         for(int i = 0; i < joueurs.getRandomPlayers().length; ++i){
             playerScores[i] = joueurs.getRandomPlayers()[i].getScore();
@@ -157,6 +171,7 @@ public class Qrgame implements Phase {
 
         //Classement en ordre décroissant
         Arrays.sort(playerScores, Collections.reverseOrder());
+
         //a customiser
         // On selectionne les 3 meilleurs pour la phase 2
         for(int i = 0; i<3;++i){
