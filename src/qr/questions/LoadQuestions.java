@@ -1,6 +1,6 @@
 package qr.questions;
 
-import qr.phases.Qrgame;
+import qr.Qrgame;
 import qr.questions.Difficulty;
 import qr.questions.QCM;
 import qr.questions.RC;
@@ -54,7 +54,33 @@ public class LoadQuestions {
                 "RED NOTICE"
         );
 
+        QCM qcm51 =  QCM.saisie(
+                "Dernier Film de THE ROCK",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(6),
+                "ELITE",
+                "WWW",
+                "RED NOTICE"
+        );
+
+        QCM qcm52 =  QCM.saisie(
+                "Dernier Film de THE ROCK",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(6),
+                "ELITE",
+                "WWW",
+                "RED NOTICE"
+        );
+
         QCM qcm6 =  QCM.saisie(
+                "Dernier Film de THE ROCK",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(5),
+                "ELITE",
+                "WWW",
+                "RED NOTICE"
+        );
+        QCM qcm61 =  QCM.saisie(
                 "Dernier Film de THE ROCK",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(5),
@@ -80,8 +106,25 @@ public class LoadQuestions {
                 "YOYO",
                 "LOL"
         );
+        QCM qcm81 =  QCM.saisie(
+                "Le best E-SPORT MOBA",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(3),
+                "ELITE",
+                "YOYO",
+                "LOL"
+        );
 
         QCM qcm9 =  QCM.saisie(
+                "Le best E-SPORT MOBA",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(2),
+                "ELITE",
+                "YOYO",
+                "LOL"
+        );
+
+        QCM qcm91 =  QCM.saisie(
                 "Le best E-SPORT MOBA",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(2),
@@ -127,7 +170,7 @@ public class LoadQuestions {
         );
         QCM qcm14 =  QCM.saisie(
                 "Le meilleur trio d'attaque de l'espagne",
-                Difficulty.MEDIUM,
+                Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(6),
                 "CR7",
                 "BBC",
@@ -147,6 +190,24 @@ public class LoadQuestions {
                 "Le nom du responsable dissertation orale?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(9),
+                "SAMOA",
+                "ZOLA",
+                "SOMA"
+        );
+
+        QCM qcm188 =  QCM.saisie(
+                "Le nom du responsable dissertation orale?",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(9),
+                "SAMOA",
+                "ZOLA",
+                "SOMA"
+        );
+
+        QCM qcm17 =  QCM.saisie(
+                "Le nom du responsable dissertation orale?",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(1),
                 "SAMOA",
                 "ZOLA",
                 "SOMA"
@@ -183,6 +244,30 @@ public class LoadQuestions {
                 "XAVI"
         );
 
+        RC rc43 =  RC.saisie(
+                "Le coach du fc barcelone ?",
+
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(5),
+                "XAVI"
+        );
+
+        RC rc44 =  RC.saisie(
+                "Le coach du fc barcelone ?",
+
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(5),
+                "XAVI"
+        );
+
+        RC rc42 =  RC.saisie(
+                "Le coach du fc barcelone ?",
+
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(2),
+                "XAVI"
+        );
+
         RC rc41 =  RC.saisie(
                 "Le coach du fc barcelone ?",
 
@@ -193,7 +278,7 @@ public class LoadQuestions {
 
         RC rc5 =  RC.saisie(
                 "Le coach du fc barcelone ?",
-                Difficulty.HARD,
+                Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(3),
                 "XAVI"
         );
@@ -224,7 +309,7 @@ public class LoadQuestions {
 
         RC rc9 =  RC.saisie(
                 "fc barcelone en europa league ?",
-                Difficulty.HARD,
+                Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(0),
                 "OUI"
         );
@@ -238,7 +323,14 @@ public class LoadQuestions {
 
         RC rc11 =  RC.saisie(
                 "Le coach du fc barcelone ?",
-                Difficulty.HARD,
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(7),
+                "EVANS"
+        );
+
+        RC rc112 =  RC.saisie(
+                "Le coach du fc barcelone ?",
+                Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(7),
                 "EVANS"
         );
@@ -259,7 +351,7 @@ public class LoadQuestions {
 
         RC rc14 =  RC.saisie(
                 "Oub c'est bouboul ?",
-                Difficulty.HARD,
+                Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(1),
                 "OUI"
         );
@@ -270,6 +362,35 @@ public class LoadQuestions {
                 Qrgame.getThemes().getThemes().get(9),
                 "NON"
         );
+
+        RC rc155 =  RC.saisie(
+                "Le campus de Gorki est le plus équipé",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(9),
+                "NON"
+        );
+
+        RC rc16 =  RC.saisie(
+                "Le campus de Gorki est le plus équipé",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(0),
+                "NON"
+        );
+
+        RC rc161 =  RC.saisie(
+                "Le campus de Gorki est le plus équipé",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(8),
+                "NON"
+        );
+
+        RC rc17 =  RC.saisie(
+                "Le meilleur buteur bundesliga?",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(1),
+                "XAVI"
+        );
+
 
 
         //Création des types VF
@@ -284,7 +405,7 @@ public class LoadQuestions {
         VF vf2 =  VF.saisie(
                 "Le projet marche",
                 
-                Difficulty.MEDIUM,
+                Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(6),
                 true
         );
@@ -307,7 +428,7 @@ public class LoadQuestions {
         VF vf5 =  VF.saisie(
                 "Le projet marche",
                 
-                Difficulty.MEDIUM,
+                Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(8),
                 true
         );
@@ -315,7 +436,7 @@ public class LoadQuestions {
         VF vf6 =  VF.saisie(
                 "Le projet voltaire marche",
                 
-                Difficulty.HARD,
+                Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(8),
                 false
         );
@@ -331,7 +452,7 @@ public class LoadQuestions {
         VF vf8 =  VF.saisie(
                 "Le projet voltaire marche",
                 
-                Difficulty.HARD,
+                Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(3),
                 false
         );
@@ -339,7 +460,15 @@ public class LoadQuestions {
         VF vf9 =  VF.saisie(
                 "Le Kebab est mieux que le Tacos ",
                 
-                Difficulty.HARD,
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(8),
+                false
+        );
+
+        VF vf91 =  VF.saisie(
+                "Le Kebab est mieux que le Tacos ",
+
+                Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(8),
                 false
         );
@@ -370,22 +499,30 @@ public class LoadQuestions {
         VF vf13 =  VF.saisie(
                 "Le Kebab est mieux que le Tacos ",
 
-                Difficulty.MEDIUM,
+                Difficulty.HARD,
                 Qrgame.getThemes().getThemes().get(2),
                 false
         );
         VF vf14 =  VF.saisie(
                 "Le Kebab est mieux que le Tacos ",
 
-                Difficulty.MEDIUM,
+                Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(5),
                 false
         );
         VF vf15 =  VF.saisie(
                 "Le Kebab est mieux que le Tacos ",
 
-                Difficulty.MEDIUM,
+                Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(6),
+                false
+        );
+
+        VF vf151 =  VF.saisie(
+                "Le Kebab est mieux que le Tacos ",
+
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(7),
                 false
         );
 
@@ -400,7 +537,7 @@ public class LoadQuestions {
         VF vf17 =  VF.saisie(
                 "Peter parker est iron man",
 
-                Difficulty.MEDIUM,
+                Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(1),
                 false
         );
@@ -409,6 +546,33 @@ public class LoadQuestions {
                 "Le crous se trouve dans le bâtiment B?",
                 Difficulty.MEDIUM,
                 Qrgame.getThemes().getThemes().get(9),
+                false
+        );
+
+        VF vf211 =  VF.saisie(
+                "Le crous se trouve dans le bâtiment B?",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(9),
+                false
+        );
+
+        VF vf19 =  VF.saisie(
+                "Zelda est plus populaire que DBZ Tenkaishi III",
+                Difficulty.EASY,
+                Qrgame.getThemes().getThemes().get(4),
+                false
+        );
+        VF vf20 =  VF.saisie(
+                "Zelda est plus populaire que DBZ Tenkaishi III",
+                Difficulty.HARD,
+                Qrgame.getThemes().getThemes().get(4),
+                false
+        );
+
+        VF vf21 =  VF.saisie(
+                "Zelda est plus populaire que DBZ Tenkaishi III",
+                Difficulty.HARD,
+                Qrgame.getThemes().getThemes().get(5),
                 false
         );
 

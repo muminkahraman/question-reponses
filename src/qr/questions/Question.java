@@ -1,6 +1,6 @@
 package qr.questions;
 
-import qr.phases.Qrgame;
+import qr.Qrgame;
 import qr.themes.Theme;
 
 public abstract class Question {

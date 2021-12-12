@@ -91,7 +91,7 @@ public class Joueurs {
     public String toString(){
         String result = "Nombre de joueurs aléatoires choisi: "+randomPlayers.length+"\n";
         for (Joueur j: this.randomPlayers) {
-            result+= j.toString()+"\n";
+            result+= j.toString()+"\n.........................\n";
         }
         return  result;
     }

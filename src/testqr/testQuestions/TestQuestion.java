@@ -1,6 +1,6 @@
 package testqr.testQuestions;
 
-import qr.phases.Qrgame;
+import qr.Qrgame;
 import qr.questions.*;
 import qr.themes.Themes;
 
