@@ -32,7 +32,10 @@ public class Joueurs {
                 new Joueur("T"),
         };
 
+    }
 
+    public Joueurs(Joueur[] selectedPlayers){
+        randomPlayers = selectedPlayers;
     }
 
     public Joueur[] getPlayers() {
@@ -75,13 +78,14 @@ public class Joueurs {
 
     }
 
+    /**
+     * Retourne la liste des joueurs choisis aléatoirement
+     * @return
+     */
     public Joueur[] getRandomPlayers() {
         return randomPlayers;
     }
 
-    public void currentPlayers(){
-
-    }
 
     @Override
     public String toString(){

@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ed405468-1020-49ee-9879-bf26f3891a57" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptions/ExitException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/ExitException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/Phase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Phase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/phases/Phase2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Phase2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/qr/phases/Qrgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Qrgame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/qr/players/Joueurs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/players/Joueurs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/questions/RC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/RC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +120,8 @@
       <workItem from="1638947652143" duration="9466000" />
       <workItem from="1639063676043" duration="10684000" />
       <workItem from="1639077190330" duration="8360000" />
-      <workItem from="1639129588710" duration="5210000" />
+      <workItem from="1639129588710" duration="6159000" />
+      <workItem from="1639299202951" duration="7047000" />
     </task>
     <servers />
   </component>

@@ -36,11 +36,16 @@ public class Qrgame implements Phase {
 
                 //saisie en dur des questions
                 LoadQuestions.createQuestions();
+
                 Theme themeChoisi = themeChoice();
                 //System.out.println(themeChoisi.toStringWithAllQuestions());
 
                 //La première phase se joue et on rempli la liste des joueurs pour la phase 2
                 startGame(themeChoisi);
+
+                //la phase2 commence en chargeant le tableau phase2Players
+                Phase2 phase2 = new Phase2(phase2Players);
+
 
 
             }
@@ -60,6 +65,12 @@ public class Qrgame implements Phase {
         return themes;
     }
 
+    /**
+     * Choix de l'opération
+     * Gestion des saisies utilisateurs pour tout le jeu
+     * @return
+     * @throws ExitException
+     */
     private static int gameChoice() throws ExitException {
         System.out.println("Choisissez une option");
         System.out.println("0. Quitter la partie\n1. Débuter la partie");
@@ -74,7 +85,11 @@ public class Qrgame implements Phase {
         return Integer.parseInt(choice);
     }
 
-    private static Theme themeChoice() {
+    /**
+     * Un thème pour la phase 1 est choisit
+     * @return
+     */
+    public static Theme themeChoice() {
         System.out.println("Choisir un thème\n----------------------");
         themes.afficherLesThemes();
         Scanner sc = new Scanner(System.in);
@@ -100,13 +115,24 @@ public class Qrgame implements Phase {
 
     }
 
-    private static Question pickRandomQuestion(Theme theme) {
+    /**
+     * selectionner aléatoirement une question dans un thème
+     * en argument
+     * @param theme
+     * @return
+     */
+    public static Question pickRandomQuestion(Theme theme) {
         List<Question> q = theme.getThemeQuestions();
         int index = new Random().nextInt(q.size());
 
         return q.get(index);
     }
 
+    /**
+     * La phase I se déroule
+     * Chaque joueur répond à son tour à une question du thème commun choisi
+     * @param theme
+     */
     private static void startGame(Theme theme) {
         Scanner sc = new Scanner(System.in);
         //Question q = pickRandomQuestion(theme);
@@ -115,13 +141,15 @@ public class Qrgame implements Phase {
             System.out.println("Joueur " + player.getNomJoueur() + "\n---------------");
             Question q = pickRandomQuestion(theme);
 
-            while ((q.getIndicator() == 1)) {
+            while ((q.getIndicator() == 1) || (q.getDifficulty()!=Difficulty.EASY)) {
                 q = pickRandomQuestion(theme);
             }
 
             q.setIndicator(1);
             System.out.println(q);
             String reponse = sc.nextLine();
+
+
 
             if (q instanceof QCM) {
                 if (reponse.equalsIgnoreCase("C")) {
@@ -155,6 +183,24 @@ public class Qrgame implements Phase {
 
         }
 
+        selectWinners();
+
+        //On reinitialise lesinicateurs des thèmes
+        for(Theme t: themes){
+            t.setChosenIndicator(0);
+        }
+
+        System.out.println("Liste des Joueurs GAGNANTS et ELIMINÉS\n---------------------------------------");
+        System.out.println(joueurs);
+
+    }
+
+
+    /**
+     * A l'issue de la phase I, le tableau des joueurs gagnants est construite
+     * Ce tableau est nommé phase2Players[] et sera utilisé pour la phase 2
+     */
+    public static void selectWinners() {
         Integer[] playerScores = new Integer[joueurs.getRandomPlayers().length];
 
         for (int i = 0; i < joueurs.getRandomPlayers().length; ++i) {
@@ -181,25 +227,21 @@ public class Qrgame implements Phase {
             }
         }
 
+        //Les joueurs qui n'ont pas été selectionnés sont éliminés
         for (int i = 0; i < joueurs.getRandomPlayers().length; ++i) {
             if ((joueurs.getRandomPlayers()[i]).getEtatJoueur() != PlayerState.WINNER) {
                 (joueurs.getRandomPlayers()[i]).setEtatJoueur(PlayerState.ELIMINATED);
             }
         }
-
-        System.out.println("Liste des Joueurs GAGNANTS et ELIMINÉS\n---------------------------------------");
-        System.out.println(joueurs);
-
-    }
-
-    @Override
-    public void selectPlayers() {
-
     }
 
     @Override
     public void runGame() {
 
+    }
+    @Override
+    public Joueur[] selectPlayers(){
+        return null;
     }
 
 

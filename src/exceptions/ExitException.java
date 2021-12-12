@@ -1,5 +1,8 @@
 package exceptions;
 
+/**
+ * Exception levée lorsque l'utilisateur choisit de quitter la partie
+ */
 public class ExitException extends Exception{
     public ExitException(String msg){ super(msg); }
     public ExitException(){ super(); }
