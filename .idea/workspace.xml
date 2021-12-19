@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed405468-1020-49ee-9879-bf26f3891a57" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/READEME.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/Phase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Phase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/phases/Phase1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Phase1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/phases/Phase2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Phase2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/Qrgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/Qrgame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/qr/phases/Phase3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Phase3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/phases/Phases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Phases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/phases/Qrgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/Qrgame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/players/Joueurs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/players/Joueurs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/questions/LoadQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/LoadQuestions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/questions/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/questions/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testqr/testQuestions/TestQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testqr/testQuestions/TestQuestion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +91,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,7 +132,8 @@
       <workItem from="1639063676043" duration="10684000" />
       <workItem from="1639077190330" duration="8360000" />
       <workItem from="1639129588710" duration="6159000" />
-      <workItem from="1639299202951" duration="15435000" />
+      <workItem from="1639299202951" duration="15974000" />
+      <workItem from="1639901913282" duration="6918000" />
     </task>
     <servers />
   </component>

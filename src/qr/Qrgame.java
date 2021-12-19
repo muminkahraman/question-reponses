@@ -14,7 +14,7 @@ import qr.themes.Theme;
 import qr.themes.Themes;
 
 /**
- * Phase I
+ * Application principale main
  */
 public class Qrgame {
     private static final Scanner scanner = new Scanner(System.in);
@@ -49,6 +49,8 @@ public class Qrgame {
 
                 //la phase3 commence en chargeant le tableau des gagnants de la phase2
                 Phase3 phase3 = new Phase3(phase2.getWinners());
+                phase3.runGame();
+                System.out.println("FIN DE LA PARTIE. VOULEZ-VOUS REJOUER ?");
 
             }
         } catch (ExitException ex) {
@@ -59,10 +61,18 @@ public class Qrgame {
 
     }
 
+    /**
+     * Renvoie la liste des questions
+     * @return
+     */
     public static Questions getQuestions() {
         return questions;
     }
 
+    /**
+     * Renvoie la liste des thèmes
+     * @return
+     */
     public static Themes getThemes() {
         return themes;
     }
