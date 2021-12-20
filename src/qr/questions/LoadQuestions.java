@@ -25,171 +25,171 @@ public class LoadQuestions {
         );
 
         QCM qcm2 =  QCM.saisie(
-                "Le langage en circuit numérique?",
+                "Qu'est-ce qu'un aspic ?",
                 Difficulty.MEDIUM,
                 Qrgame.getThemes().getThemes().get(8),
-                "VLC",
-                "VHCL",
-                "VHCL"
+                "Une darne de poisson",
+                "Un plat à base d'anguilles",
+                "Un mets présenté en gelée"
         );
 
         QCM qcm3 =  QCM.saisie(
-                "Le nom du prof de TD java ?",
+                "C'est quoi Internet ?",
                 Difficulty.HARD,
                 Qrgame.getThemes().getThemes().get(7),
-                "LASCHOOT",
-                "LESCHOOT",
-                "LANDSCHOOT"
+                "un réseau téléphonique permettant de relier les personnes",
+                "un des 7 nains du dessin animé Blanche Neige",
+                "un réseau mondial permettant de connecter tous les ordinateurs entre eux"
         );
 
         QCM qcm4 =  QCM.saisie(
-                "Ma marque d'eau minérale",
+                "C'est quoi le Web ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(7),
-                "CRISTAL",
-                "CRISTALI",
-                "CRISTALINE"
+                "un dispositif de sécurité",
+                "un dessert californien",
+                "un système permettant de consulter, avec un navigateur, des pages accessibles sur des sites"
         );
 
         QCM qcm5 =  QCM.saisie(
-                "Dernier Film de THE ROCK",
+                "De quel pays le tourisme est-il originaire ?",
                 Difficulty.MEDIUM,
                 Qrgame.getThemes().getThemes().get(6),
-                "ELITE",
-                "WWW",
-                "RED NOTICE"
+                "Japon",
+                "France",
+                "Royaume-Uni"
         );
 
         QCM qcm51 =  QCM.saisie(
-                "Dernier Film de THE ROCK",
+                "A quel siècle a-t-il commencé à se développer ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(6),
-                "ELITE",
-                "WWW",
-                "RED NOTICE"
+                "Au XVIe siècle",
+                "Au XVIIe siècle",
+                "Au XVIIIe siècle"
         );
 
         QCM qcm52 =  QCM.saisie(
-                "Dernier Film de THE ROCK",
+                "A partir de quelle durée hors de son domicile est-on considéré comme un touriste ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(6),
-                "ELITE",
-                "WWW",
-                "RED NOTICE"
+                "Une semaine",
+                "5 jours",
+                "24 heures"
         );
 
         QCM qcm6 =  QCM.saisie(
-                "Dernier Film de THE ROCK",
+                "Quelle est la particularité de la tour Albert, située dans le XIIIe arrondissement ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(5),
-                "ELITE",
-                "WWW",
-                "RED NOTICE"
+                "C'est le seul monument du Corbusier à Paris",
+                "Elle est inhabitée",
+                "C'est la première tour d'habitation d e Paris"
         );
         QCM qcm61 =  QCM.saisie(
-                "Dernier Film de THE ROCK",
+                "Où se trouve le mur des Fédérés ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(5),
-                "ELITE",
-                "WWW",
-                "RED NOTICE"
+                "A Belleville",
+                "A ménilmontant",
+                "Au cimetière du Père-Lachaise"
         );
 
         QCM qcm7 =  QCM.saisie(
-                "Dernier Film de THE ROCK",
+                "Quel est le développeur de la licence 'FIFA' ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(4),
-                "ELITE",
-                "WWW",
-                "JUMANJI"
+                "EA",
+                "Infinity Ward",
+                "Konami"
         );
 
         QCM qcm8 =  QCM.saisie(
-                "Le best E-SPORT MOBA",
+                "Quel est le périmètre d'un carré de 7 cm de côté ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(3),
-                "ELITE",
-                "YOYO",
-                "LOL"
+                "14",
+                "38",
+                "28"
         );
         QCM qcm81 =  QCM.saisie(
-                "Le best E-SPORT MOBA",
+                "Combien de côtés a un dodécagone ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(3),
-                "ELITE",
-                "YOYO",
-                "LOL"
+                "10",
+                "8",
+                "12"
         );
 
         QCM qcm9 =  QCM.saisie(
-                "Le best E-SPORT MOBA",
+                "'La grande dépression', vous connaissez ? C'est",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(2),
-                "ELITE",
-                "YOYO",
-                "LOL"
+                "La grande famine de l'URSS (1931-1933)",
+                "La vague de chaleur au Royaume-Uni en 1976",
+                "La crise de 1929"
         );
 
         QCM qcm91 =  QCM.saisie(
-                "Le best E-SPORT MOBA",
+                "Lequel de ces pays a envahi l'Ethiopie en 1935 - 1936 ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(2),
-                "ELITE",
-                "YOYO",
-                "LOL"
+                "Espagne",
+                "Royaume-Uni",
+                "Italie"
         );
 
         QCM qcm10 =  QCM.saisie(
-                "Le best E-SPORT MOBA",
+                "Comment calcule-t-on l'aire d'un triangle ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(3),
-                "ELITE",
-                "YOYO",
-                "LOL"
+                "base x hauteur",
+                "base x hauteur*2",
+                "base x hauteur/2"
         );
 
         QCM qcm11 =  QCM.saisie(
-                "Le best E-SPORT MOBA",
+                "Quelle est la distance du marathon?",
                 Difficulty.HARD,
                 Qrgame.getThemes().getThemes().get(0),
-                "ELITE",
-                "YOYO",
-                "LOL"
+                "38.5km",
+                "43.2km",
+                "42,195km"
         );
 
         QCM qcm12 =  QCM.saisie(
-                "Le best E-SPORT MOBA",
+                "Quel jeu de Rockstar sorti en 2013 a fait le buzz pendant plusieurs semaines ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(4),
-                "ELITE",
-                "YOYO",
-                "LOL"
+                "Red Dead Redemption",
+                "LOL",
+                "GTA5"
         );
 
         QCM qcm13 =  QCM.saisie(
-                "Le joueur en avant sur FIFA 22",
+                "Que désignait le 'S T O' durant une certaine période du XXème siècle ?\n",
                 Difficulty.MEDIUM,
                 Qrgame.getThemes().getThemes().get(2),
-                "Mbappe",
-                "Rashford",
-                "Choupo Moting"
+                "Sécurité du territoire ouest",
+                "Service technique ouvrier",
+                "Service du travail obligatoire"
         );
         QCM qcm14 =  QCM.saisie(
-                "Le meilleur trio d'attaque de l'espagne",
+                "À quel personnage historique l’acronyme INRI fait-il référence ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(6),
-                "CR7",
-                "BBC",
-                "MSN"
+                "César",
+                "Virgile",
+                "Jésus"
         );
 
         QCM qcm15 =  QCM.saisie(
-                "Le meilleur trio d'attaque de l'espagne",
+                "A quoi sert un navigateur Internet ?",
                 Difficulty.MEDIUM,
                 Qrgame.getThemes().getThemes().get(7),
-                "CR7",
-                "BBC",
-                "MSN"
+                "à recharger la batterie de son ordinateur",
+                "à guider un navire vers son port de destination",
+                "à consulter et afficher le contenu des sites Web"
         );
 
         QCM qcm16 =  QCM.saisie(
@@ -202,21 +202,21 @@ public class LoadQuestions {
         );
 
         QCM qcm188 =  QCM.saisie(
-                "Le nom du responsable dissertation orale?",
+                "Le campus principal?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(9),
-                "SAMOA",
-                "ZOLA",
-                "SOMA"
+                "Corki",
+                "Paris",
+                "République"
         );
 
         QCM qcm17 =  QCM.saisie(
-                "Le nom du responsable dissertation orale?",
+                "Qui a inventé le stéthoscope ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(1),
-                "SAMOA",
-                "ZOLA",
-                "SOMA"
+                "Claude Bernard",
+                "Alexander Flemming",
+                "René Laennec"
         );
 
 
@@ -236,81 +236,81 @@ public class LoadQuestions {
         );
 
         RC rc3 =  RC.saisie(
-                "Le coach du fc barcelone ?",
+                "Quel est le trajet effectué par le premier à vapeur ?",
                 Difficulty.HARD,
                 Qrgame.getThemes().getThemes().get(1),
-                "XAVI"
+                "Lyon-Saint-Étienne"
         );
 
         RC rc4 =  RC.saisie(
-                "Le coach du fc barcelone ?",
+                "Comment les premières années après la première guerre mondiale sont-elles appelées en France ?",
                 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(2),
-                "XAVI"
+                "Les années folles"
         );
 
         RC rc43 =  RC.saisie(
-                "Le coach du fc barcelone ?",
+                "En Histoire qu'appelle-t-on 'Le Jour J' ?",
 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(5),
-                "XAVI"
+                "Le 6 juin 1944"
         );
 
         RC rc44 =  RC.saisie(
-                "Le coach du fc barcelone ?",
+                "Qui chantait 'Pour un petit tour, au petit jour, entre tes draps' ?",
 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(5),
-                "XAVI"
+                "Michel Delpech"
         );
 
         RC rc42 =  RC.saisie(
-                "Le coach du fc barcelone ?",
+                "La coalition qui gouverna la France entre 1919 et 1924 est surnommée",
 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(2),
-                "XAVI"
+                "Le Bloc National"
         );
 
         RC rc41 =  RC.saisie(
-                "Le coach du fc barcelone ?",
+                "Quel est le jeu de Naughty Dog sur les zombies ?",
 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(4),
-                "XAVI"
+                "The Last of Us"
         );
 
         RC rc5 =  RC.saisie(
-                "Le coach du fc barcelone ?",
+                "Quelle est la forme des faces d'un tétraèdre ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(3),
-                "XAVI"
+                "Triangulaire"
         );
 
         RC rc6 =  RC.saisie(
-                "Le coach du fc barcelone ?",
+                "Quelle console est sortie le 22 novembre 2013 ?",
                 
                 Difficulty.MEDIUM,
                 Qrgame.getThemes().getThemes().get(4),
-                "XAVI"
+                "Xbox One"
         );
 
         RC rc7 =  RC.saisie(
-                "Le coach du fc barcelone ?",
+                "Combien y a-t-il de jours du Condor, dans titre du film de Sydney Pollack dans lequel jouent Robert Redford et Faye Dunaway ?",
                 
                 Difficulty.MEDIUM,
                 Qrgame.getThemes().getThemes().get(5),
-                "XAVI"
+                "3 jours"
         );
 
         RC rc8 =  RC.saisie(
-                "Le tableau est vert",
+                "Où se déroule l'E3 ?",
                 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(4),
-                "OUI"
+                "Los Angeles"
         );
 
         RC rc9 =  RC.saisie(
@@ -321,45 +321,45 @@ public class LoadQuestions {
         );
 
         RC rc10 =  RC.saisie(
-                "Le coach du fc barcelone ?",
+                "Comment appelle-t-on des droites du plan qui ne se coupent pas ?",
                 Difficulty.HARD,
                 Qrgame.getThemes().getThemes().get(3),
-                "XAVI"
+                "droites parallèles"
         );
 
         RC rc11 =  RC.saisie(
-                "Le coach du fc barcelone ?",
+                "Avast, MacAfee sont des logiciels :",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(7),
-                "EVANS"
+                "antivirus"
         );
 
         RC rc112 =  RC.saisie(
-                "Le coach du fc barcelone ?",
+                "Comment s'appelle une personne utilisant Internet :",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(7),
-                "EVANS"
+                "un internaute"
         );
 
         RC rc12 =  RC.saisie(
-                "L'anime avec le plus d'épisodes ?",
+                "Quel est le plus grand parc d'attraction en France ?",
                 Difficulty.HARD,
                 Qrgame.getThemes().getThemes().get(6),
-                "EVANS"
+                "Eurodisney"
         );
 
         RC rc13 =  RC.saisie(
-                "Cobra de manga a une main??",
+                "Efrei est le meilleur école en France?",
                 Difficulty.HARD,
                 Qrgame.getThemes().getThemes().get(9),
                 "OUI"
         );
 
         RC rc14 =  RC.saisie(
-                "Oub c'est bouboul ?",
+                "Qui a inventé la pile électrique ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(1),
-                "OUI"
+                "Volta"
         );
 
         RC rc15 =  RC.saisie(
@@ -370,31 +370,31 @@ public class LoadQuestions {
         );
 
         RC rc155 =  RC.saisie(
-                "Le campus de Gorki est le plus équipé",
+                "Le campus de République est le plus équipé",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(9),
-                "NON"
+                "Oui"
         );
 
         RC rc16 =  RC.saisie(
-                "Le campus de Gorki est le plus équipé",
+                "Quel sport est arbitré obligatoirement en français ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(0),
-                "NON"
+                "L’escrime"
         );
 
         RC rc161 =  RC.saisie(
-                "Le campus de Gorki est le plus équipé",
+                "Un potage aux navets s'appelle un potage",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(8),
-                "NON"
+                "Fréneuse"
         );
 
         RC rc17 =  RC.saisie(
-                "Le meilleur buteur bundesliga?",
+                "Quelle est la plus vieille centrale nucléaire de France ?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(1),
-                "XAVI"
+                "Fessenheim"
         );
 
 
@@ -409,7 +409,7 @@ public class LoadQuestions {
         );
 
         VF vf2 =  VF.saisie(
-                "Le projet marche",
+                "Les Alpes est la chaîne de montagne la plus touristique",
                 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(6),
@@ -417,14 +417,14 @@ public class LoadQuestions {
         );
 
         VF vf3 =  VF.saisie(
-                "Le projet marche",
+                "Chrome est un navigateur",
                 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(7),
                 true
         );
         VF vf4 =  VF.saisie(
-                "Le projet marche",
+                "Un potage aux navets s'appelle un potage Fréneuse",
                 
                 Difficulty.HARD,
                 Qrgame.getThemes().getThemes().get(8),
@@ -432,7 +432,7 @@ public class LoadQuestions {
         );
 
         VF vf5 =  VF.saisie(
-                "Le projet marche",
+                "Spécialité de Vendée, haricots blancs sont les mogettes ?",
                 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(8),
@@ -440,7 +440,7 @@ public class LoadQuestions {
         );
 
         VF vf6 =  VF.saisie(
-                "Le projet voltaire marche",
+                "On appelle pétrir une beurre avec du persil 'fraiser'",
                 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(8),
@@ -448,7 +448,7 @@ public class LoadQuestions {
         );
 
         VF vf7 =  VF.saisie(
-                "Le projet voltaire marche",
+                "la locomotive à vapeur fut inventée en France ",
                 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(2),
@@ -456,7 +456,7 @@ public class LoadQuestions {
         );
 
         VF vf8 =  VF.saisie(
-                "Le projet voltaire marche",
+                "un dodécagone a 10 côtés",
                 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(3),
@@ -472,7 +472,7 @@ public class LoadQuestions {
         );
 
         VF vf91 =  VF.saisie(
-                "Le Kebab est mieux que le Tacos ",
+                " \"la roulade de Sévigné\" est dinde aux marrons",
 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(8),
@@ -480,7 +480,7 @@ public class LoadQuestions {
         );
 
         VF vf10 =  VF.saisie(
-                "Le projet marche ?",
+                "Un triangle peut-il être à la fois rectangle et isocèle ?",
 
                 Difficulty.MEDIUM,
                 Qrgame.getThemes().getThemes().get(3),
@@ -488,7 +488,7 @@ public class LoadQuestions {
         );
 
         VF vf11 =  VF.saisie(
-                "Le projet marche ?",
+                "Au judo, Ceinture noire est le grade le plus élevé",
 
                 Difficulty.MEDIUM,
                 Qrgame.getThemes().getThemes().get(0),
@@ -496,28 +496,28 @@ public class LoadQuestions {
         );
 
         VF vf12 =  VF.saisie(
-                "Le Kebab est mieux que le Tacos ",
+                "Claude Bernard a inventé le stéthoscope",
 
                 Difficulty.MEDIUM,
                 Qrgame.getThemes().getThemes().get(1),
                 false
         );
         VF vf13 =  VF.saisie(
-                "Le Kebab est mieux que le Tacos ",
+                "Victor Hugo fut 'l'avocat' et le principal soutien de Dreyfus en 1898 ?",
 
                 Difficulty.HARD,
                 Qrgame.getThemes().getThemes().get(2),
                 false
         );
         VF vf14 =  VF.saisie(
-                "Le Kebab est mieux que le Tacos ",
+                "Mike Brant chantait 'Pour un petit tour, au petit jour, entre tes draps'",
 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(5),
                 false
         );
         VF vf15 =  VF.saisie(
-                "Le Kebab est mieux que le Tacos ",
+                "La grande Muraille de Chine n'est pas une des 7 nouvelles merveilles du monde",
 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(6),
@@ -525,7 +525,7 @@ public class LoadQuestions {
         );
 
         VF vf151 =  VF.saisie(
-                "Le Kebab est mieux que le Tacos ",
+                "Google est un navigateur",
 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(7),
@@ -541,7 +541,7 @@ public class LoadQuestions {
         );
 
         VF vf17 =  VF.saisie(
-                "Peter parker est iron man",
+                "Roland Garros a gagné le premier tournoi de tennis en 1910 et donné son nom au court",
 
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(1),
@@ -556,7 +556,7 @@ public class LoadQuestions {
         );
 
         VF vf211 =  VF.saisie(
-                "Le crous se trouve dans le bâtiment B?",
+                "Les exams se trouve dans le bâtiment B?",
                 Difficulty.EASY,
                 Qrgame.getThemes().getThemes().get(9),
                 false
@@ -569,14 +569,14 @@ public class LoadQuestions {
                 false
         );
         VF vf20 =  VF.saisie(
-                "Zelda est plus populaire que DBZ Tenkaishi III",
+                "le nom du \"Call Of Duty\" sorti en 2011 est Ghosts",
                 Difficulty.HARD,
                 Qrgame.getThemes().getThemes().get(4),
                 false
         );
 
         VF vf21 =  VF.saisie(
-                "Zelda est plus populaire que DBZ Tenkaishi III",
+                "Mireille Darc jouait dans le film \"Belle de jour\" ?",
                 Difficulty.HARD,
                 Qrgame.getThemes().getThemes().get(5),
                 false
