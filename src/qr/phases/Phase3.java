@@ -14,7 +14,7 @@ import java.util.Scanner;
 import interfaces.Phase;
 import qr.players.Joueur;
 
-public class Phase3 extends Phases implements Phase {
+public class Phase3 extends Phases {
 
     public Phase3(Joueur[] phase2winners) {
         super(phase2winners);

@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Phase1 extends Phases implements Phase {
+public class Phase1 extends Phases{
 
 
     public Phase1(Joueur[] chosenPlayers) {

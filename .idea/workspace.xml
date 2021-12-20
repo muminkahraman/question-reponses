@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed405468-1020-49ee-9879-bf26f3891a57" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/READEME.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/Qrgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/Qrgame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/phases/Phase3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Phase3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +48,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Application.Qrgame">
     <configuration name="Qrgame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -133,7 +132,9 @@
       <workItem from="1639077190330" duration="8360000" />
       <workItem from="1639129588710" duration="6159000" />
       <workItem from="1639299202951" duration="15974000" />
-      <workItem from="1639901913282" duration="6918000" />
+      <workItem from="1639901913282" duration="8511000" />
+      <workItem from="1639926049058" duration="1190000" />
+      <workItem from="1639927261467" duration="927000" />
     </task>
     <servers />
   </component>

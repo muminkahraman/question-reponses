@@ -1,5 +1,6 @@
 package qr.phases;
 
+import interfaces.Phase;
 import qr.players.Joueur;
 import qr.players.Joueurs;
 import qr.questions.QCM;
@@ -18,7 +19,7 @@ import java.util.Random;
  *
  * winners[] est le tableau des gangnants de la phase
  */
-public class Phases {
+public class Phases  implements Phase {
 
     protected Joueurs joueurs;
     protected Joueur[] winners;
@@ -76,6 +77,13 @@ public class Phases {
     }
 
 
+    @Override
+    public void selectPlayers() {
 
+    }
 
+    @Override
+    public void runGame() {
+
+    }
 }
