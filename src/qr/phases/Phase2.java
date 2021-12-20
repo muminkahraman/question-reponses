@@ -26,14 +26,17 @@ public class Phase2 extends Phases {
         //Les états des joueurs sont remis à SELECTED
         for (int i = 0; i < joueurs.getRandomPlayers().length; ++i) {
 
-                (joueurs.getRandomPlayers()[i]).setEtatJoueur(PlayerState.SELECTED);
+            (joueurs.getRandomPlayers()[i]).setEtatJoueur(PlayerState.SELECTED);
         }
 
         //Chaque joueur va répondre deux fois à une question de difficulté moyenne
         //de deux thèmes qu'il va choisira
         for (int k = 0; k < 2; ++k) {
             for (int i = 0; i < joueurs.getRandomPlayers().length; ++i) {
+
+
                 Theme themeChose = Qrgame.themeChoice();
+
                 Scanner sc = new Scanner(System.in);
                 Joueur player = joueurs.getRandomPlayers()[i];
 
@@ -49,6 +52,7 @@ public class Phase2 extends Phases {
                 String reponse = sc.nextLine();
 
                 super.traiterReponse(reponse, q, player, 3);
+
 
             }
         }

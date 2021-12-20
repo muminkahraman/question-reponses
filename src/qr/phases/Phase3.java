@@ -31,6 +31,11 @@ public class Phase3 extends Phases {
             (joueurs.getRandomPlayers()[i]).setEtatJoueur(PlayerState.SELECTED);
         }
 
+        //Les indicateurs de thème sont remis à 0
+        for(Theme t: Qrgame.getThemes()){
+            t.setChosenIndicator(0);
+        }
+
         //Chaque joueur va répondre trois fois à une question de niveau difficile
         //de 3 thèmes qu'il va choisira
         for (int k = 0; k < 3; ++k) {
@@ -63,6 +68,11 @@ public class Phase3 extends Phases {
 
         System.out.println("Le gagnant est\n---------------------------------------");
         System.out.println(winners[0]);
+
+        //Les indicateurs de thème sont remis à 0
+        for(Theme t: Qrgame.getThemes()){
+            t.setChosenIndicator(0);
+        }
     }
 
 

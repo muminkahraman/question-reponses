@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ed405468-1020-49ee-9879-bf26f3891a57" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelisation/.UML.vpp.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelisation/QRGame_ClassDiagram.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelisation/UML.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/Modelisation/UML.vpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/Qrgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/Qrgame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/qr/phases/Phase1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Phase1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qr/phases/Phases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Phases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/phases/Phase2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Phase2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/phases/Phase3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/phases/Phase3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/qr/themes/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qr/themes/Theme.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +139,7 @@
       <workItem from="1639927261467" duration="927000" />
       <workItem from="1639988481019" duration="773000" />
       <workItem from="1639990766769" duration="895000" />
-      <workItem from="1640012763170" duration="1579000" />
+      <workItem from="1640012763170" duration="5868000" />
     </task>
     <servers />
   </component>

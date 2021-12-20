@@ -15,6 +15,12 @@ public class Theme implements Iterable<Question> {
         themeQuestions = new ArrayList<Question>();
     }
 
+    public Theme(){
+        this.designation = null;
+        chosenIndicator = 0;
+        themeQuestions = new ArrayList<Question>();
+    }
+
     public String getDesignation() {
         return designation;
     }

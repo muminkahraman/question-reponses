@@ -110,16 +110,18 @@ public class Qrgame {
         Theme chosenTheme = null;
 
 
-        while (!choice.matches("\\d+") || (nbChoice = Integer.parseInt(choice)) < 0 || nbChoice > themes.getThemes().size()) {
-            System.out.println("Choix invalide !\n\nEssayez encore :");
+        while (!choice.matches("\\d+") || (nbChoice = Integer.parseInt(choice)) < 0 || nbChoice > themes.getThemes().size() || ((chosenTheme = themes.getThemes().get(Integer.parseInt(choice) - 1)).getChosenIndicator() == 1)) {
+            System.err.println("Choix invalide ou thème déjà choisi !\n\nEssayez encore :");
             choice = sc.nextLine();
         }
 
-        chosenTheme = themes.getThemes().get(Integer.parseInt(choice) - 1);
-        if (chosenTheme.getChosenIndicator() == 1) {
+        /*while ((chosenTheme = themes.getThemes().get(Integer.parseInt(choice) - 1)).getChosenIndicator() == 1) {
             System.err.println("Ce thème a déjà été choisi ! Choisissez un autre :");
-            themeChoice();
-        }
+            //themeChoice();
+            choice = sc.nextLine();
+        }*/
+
+
 
         chosenTheme.setChosenIndicator(1);
 
