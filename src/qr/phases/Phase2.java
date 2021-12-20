@@ -95,7 +95,10 @@ public class Phase2 extends Phases {
                         winners[i] = (joueurs.getRandomPlayers()[i]);
                         (joueurs.getRandomPlayers()[i]).setEtatJoueur(PlayerState.WINNER);
                     }
-
+                }
+                else{
+                    winners[i] = (joueurs.getRandomPlayers()[i]);
+                    (joueurs.getRandomPlayers()[i]).setEtatJoueur(PlayerState.WINNER);
                 }
             } else {
                 winners[i] = (joueurs.getRandomPlayers()[i]);
