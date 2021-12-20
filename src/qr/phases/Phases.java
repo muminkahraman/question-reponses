@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Classe mère des phases
+ * Classe mere des phases
  *
  * Attribut joueurs est la liste des joueurs de la phase
  *
@@ -28,12 +28,16 @@ public class Phases  implements Phase {
         this.joueurs = new Joueurs(players);
     }
 
+    /**
+     * renvoie les gagnants de la phase
+     * @return
+     */
     public Joueur[] getWinners() {
         return winners;
     }
 
     /**
-     * selectionner aléatoirement une question dans un thème
+     * selectionner aleatoirement une question dans un theme
      * en argument
      * @param theme
      * @return
@@ -45,6 +49,15 @@ public class Phases  implements Phase {
         return q.get(index);
     }
 
+    /**
+     * traiter la reponse du joueur et evaluer si elle est correcte ou non
+     * en fonction du type de question
+     * incrementer le score su joueur par addScore
+     * @param reponse
+     * @param q
+     * @param player
+     * @param addScore
+     */
     protected void traiterReponse(String reponse, Question q, Joueur player, int addScore){
         if (q instanceof QCM) {
             if (reponse.equalsIgnoreCase("C")) {

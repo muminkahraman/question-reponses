@@ -91,10 +91,13 @@ public class Phase3 extends Phases {
         // On selectionne le meilleur pour  fin du jeu
         for (int i = 0; i < 1; ++i) {
             int score = joueurs.getRandomPlayers()[i].getScore();
-
+            if (score == playerScores[i] && score > 0) {
                 winners[i] = (joueurs.getRandomPlayers()[i]);
                 (joueurs.getRandomPlayers()[i]).setEtatJoueur(PlayerState.SUPER_WINNER);
-
+            }else{
+                winners[i] = (joueurs.getRandomPlayers()[i+1]);
+                (joueurs.getRandomPlayers()[i+1]).setEtatJoueur(PlayerState.SUPER_WINNER);
+            }
         }
 
         //Les joueurs qui n'ont pas été selectionnés sont éliminés

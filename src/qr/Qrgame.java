@@ -70,7 +70,7 @@ public class Qrgame {
     }
 
     /**
-     * Renvoie la liste des thèmes
+     * Renvoie la liste des themes
      * @return
      */
     public static Themes getThemes() {
@@ -78,7 +78,7 @@ public class Qrgame {
     }
 
     /**
-     * Choix de l'opération
+     * Choix de l operation
      * Gestion des saisies utilisateurs pour tout le jeu
      * @return
      * @throws ExitException
@@ -98,7 +98,7 @@ public class Qrgame {
     }
 
     /**
-     * Un thème pour la phase 1 est choisit
+     * Un theme pour la phase 1 est choisit
      * @return
      */
     public static Theme themeChoice() {

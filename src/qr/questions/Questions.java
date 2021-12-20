@@ -11,6 +11,12 @@ public class Questions {
         allQuestions = new ArrayList<Question>();
     }
 
+    /**
+     * on ajoute une question dans la liste de toutes les questions du jeu
+     * On attribue comme numero de question sequentielle la valeur
+     * actuelle de NUMERO_DE_QUESTION
+     * @param question
+     */
     public  void addQuestion(Question question){
         allQuestions.add(question);
         //On  attribue comme numéro de question séquentielle la valeur

@@ -6,7 +6,13 @@ import qr.questions.QCM;
 import qr.questions.RC;
 import qr.questions.VF;
 
+/**
+ * Ici les questions sont crees en dur
+ */
 public class LoadQuestions {
+    /**
+     * creation des questions de tous les types
+     */
     public static void createQuestions(){
         //Création des types QCMs
         QCM qcm1 =  QCM.saisie(

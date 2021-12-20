@@ -79,7 +79,7 @@ public class Joueurs {
     }
 
     /**
-     * Retourne la liste des joueurs choisis aléatoirement
+     * Retourne la liste des joueurs choisis aleatoirement
      * @return
      */
     public Joueur[] getRandomPlayers() {

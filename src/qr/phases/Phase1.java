@@ -22,8 +22,8 @@ public class Phase1 extends Phases{
 
 
     /**
-     * La phase I se déroule
-     * Chaque joueur répond à son tour à une question du thème commun choisi
+     * La phase I se deroule
+     * Chaque joueur repond a son tour a une question du theme commun choisi
      */
    @Override
     public  void runGame() {
@@ -59,8 +59,8 @@ public class Phase1 extends Phases{
     }
 
     /**
-     * A l'issue de la phase I, le tableau des joueurs gagnants est construite
-     * Ce tableau est nommé winners[] et sera utilisé pour la phase 2
+     * A l issue de la phase I, le tableau des joueurs gagnants est construite
+     * Ce tableau est nomme winners[] et sera utilise pour la phase 2
      */
     @Override
     public void selectPlayers() {
