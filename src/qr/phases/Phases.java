@@ -25,7 +25,7 @@ public class Phases  implements Phase {
     protected Joueur[] winners;
 
     public Phases(Joueur[] players){
-        joueurs = new Joueurs(players);
+        this.joueurs = new Joueurs(players);
     }
 
     public Joueur[] getWinners() {

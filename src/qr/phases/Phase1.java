@@ -84,7 +84,12 @@ public class Phase1 extends Phases{
             else{
                 for(int j=i+1; j < joueurs.getRandomPlayers().length-i;++j){
                     if(joueurs.getRandomPlayers()[j].getScore()>0){
-                        winners[j] = (joueurs.getRandomPlayers()[j]);
+                        winners[i] = (joueurs.getRandomPlayers()[j]);
+                        (joueurs.getRandomPlayers()[j]).setEtatJoueur(PlayerState.WINNER);
+                    }
+                    else {
+                        winners[i] = (joueurs.getRandomPlayers()[i]);
+                        (joueurs.getRandomPlayers()[i]).setEtatJoueur(PlayerState.WINNER);
                     }
                 }
             }
