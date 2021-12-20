@@ -89,7 +89,7 @@ public class Phase2 extends Phases {
                 if (score == playerScores[i - 1]) {
                     if(joueurs.getRandomPlayers()[i + 1] != null){
                         winners[i] = (joueurs.getRandomPlayers()[i + 1]);
-                        (joueurs.getRandomPlayers()[i]).setEtatJoueur(PlayerState.WINNER);
+                        (joueurs.getRandomPlayers()[i+1]).setEtatJoueur(PlayerState.WINNER);
                     }
                     else {
                         winners[i] = (joueurs.getRandomPlayers()[i]);
